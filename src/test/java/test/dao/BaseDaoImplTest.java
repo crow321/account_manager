@@ -20,6 +20,7 @@ public class BaseDaoImplTest extends Junit4BaseTest{
     private AccountDaoImpl accountDao;
 
     @Test
+    @Transactional(readOnly = false,propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public void insert() throws Exception {
 
         Account account = new Account();

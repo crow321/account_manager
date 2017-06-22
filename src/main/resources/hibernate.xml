@@ -47,10 +47,10 @@
 
     <!-- <tx:annotation-driven/> 和下面的tx:advice,aop 属于两种处理事务方式-->
     <!-- 第一种：通过使用注解 @transactional 进行事务驱动-->
-    <!--<tx:annotation-driven/>-->
+    <tx:annotation-driven/>
 
-    <!-- 第二种 使用aop切面处理事务 -->
-    <!-- 定义事务通知 -->
+   <!-- &lt;!&ndash; 第二种 使用aop切面处理事务 &ndash;&gt;
+    &lt;!&ndash; 定义事务通知 &ndash;&gt;
     <tx:advice id="txAdvice">
         <tx:attributes>
             <tx:method name="insert" propagation="REQUIRED" read-only="false"/>
@@ -58,9 +58,9 @@
         </tx:attributes>
     </tx:advice>
 
-    <!-- 定义事务切面 并应用事务通知 -->
+    &lt;!&ndash; 定义事务切面 并应用事务通知 &ndash;&gt;
     <aop:config proxy-target-class="true">
         <aop:pointcut id="pointcut" expression="execution(* com.jump.account.base.dao.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"/>
-    </aop:config>
+    </aop:config>-->
 </beans>
