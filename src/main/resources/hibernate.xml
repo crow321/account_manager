@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
@@ -47,10 +47,10 @@
 
     <!-- <tx:annotation-driven/> 和下面的tx:advice,aop 属于两种处理事务方式-->
     <!-- 第一种：通过使用注解 @transactional 进行事务驱动-->
-    <tx:annotation-driven/>
+    <!--<tx:annotation-driven/>-->
 
-   <!-- &lt;!&ndash; 第二种 使用aop切面处理事务 &ndash;&gt;
-    &lt;!&ndash; 定义事务通知 &ndash;&gt;
+    <!-- 第二种 使用aop切面处理事务 -->
+    <!-- 定义事务通知 -->
     <tx:advice id="txAdvice">
         <tx:attributes>
             <tx:method name="insert" propagation="REQUIRED" read-only="false"/>
@@ -58,9 +58,9 @@
         </tx:attributes>
     </tx:advice>
 
-    &lt;!&ndash; 定义事务切面 并应用事务通知 &ndash;&gt;
+    <!-- 定义事务切面 并应用事务通知 -->
     <aop:config proxy-target-class="true">
         <aop:pointcut id="pointcut" expression="execution(* com.jump.account.base.dao.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"/>
-    </aop:config>-->
+    </aop:config>
 </beans>

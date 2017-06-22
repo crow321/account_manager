@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.nio.charset.Charset;
 import java.util.Date;
 
 import static org.junit.Assert.*;
@@ -20,17 +21,15 @@ public class BaseDaoImplTest extends Junit4BaseTest{
     private AccountDaoImpl accountDao;
 
     @Test
-    @Transactional(readOnly = false,propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public void insert() throws Exception {
 
         Account account = new Account();
-        account.setName("insert");
+        account.setName("git@192.168.56.102");
         account.setTime(new Date());
-        account.setId(10);
-        account.setMessage("message");
-        account.setUrl("url");
-        account.setUserName("root");
-        account.setPassword("123456");
+        account.setMessage("在自己的虚拟机中");
+        account.setUrl("192.168.56.102");
+        account.setUserName("git");
+        account.setPassword("Qtec@123");
         boolean result = accountDao.insert(account);
         System.out.println("insert: " + result);
     }
