@@ -2,6 +2,7 @@ package com.jump.account.base.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.Date;
 
 /**
@@ -18,18 +19,18 @@ public class Account implements Serializable {
     private String url;
     @Column(name = "USER_NAME")
     private String userName;
-    private String password;
+    private byte[] password;
     private Date time;
 
     public Account() {
     }
 
-    public Account(String userName, String password) {
+    public Account(String userName, byte[] password) {
         this.userName = userName;
         this.password = password;
     }
 
-    public Account(String url, String userName, String password) {
+    public Account(String url, String userName, byte[] password) {
         this(userName, password);
         this.url = url;
     }
@@ -66,11 +67,11 @@ public class Account implements Serializable {
         this.userName = userName;
     }
 
-    public String getPassword() {
+    public byte[] getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(byte[] password) {
         this.password = password;
     }
 
@@ -92,13 +93,13 @@ public class Account implements Serializable {
 
     @Override
     public String toString() {
-        return "Acount{" +
+        return "Account{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", message='" + message + '\'' +
                 ", url='" + url + '\'' +
                 ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
+                ", password=" + Arrays.toString(password) +
                 ", time=" + time +
                 '}';
     }
