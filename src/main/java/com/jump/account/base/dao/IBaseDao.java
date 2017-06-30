@@ -43,4 +43,12 @@ public interface IBaseDao<T> {
      * @return
      */
     int count(String hql);
+
+    /**
+     * 根据关键字进行模糊查询
+     *
+     * @param keyword 关键字
+     * @return 返回匹配到的所有对象
+     */
+    List<T> queryByKeyword(String keyword);
 }
