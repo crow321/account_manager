@@ -5,17 +5,15 @@ import com.jump.account.base.entity.Account;
 import com.jump.account.base.vo.Page;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import test.Junit4BaseTest;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by zhangp on 2017/6/22.
  */
-public class BaseDaoImplTest extends Junit4BaseTest{
+public class AccountDaoImplTest extends Junit4BaseTest {
     @Autowired
     private AccountDaoImpl accountDao;
 
@@ -47,7 +45,9 @@ public class BaseDaoImplTest extends Junit4BaseTest{
     }
 
     @Test
-    public void deleteByName() throws Exception {
+    public void deleteByKeyword() throws Exception {
+        boolean res = accountDao.deleteByKeyword("url");
+        System.out.println("del：" + res);
     }
 
     @Test
@@ -61,4 +61,12 @@ public class BaseDaoImplTest extends Junit4BaseTest{
         System.out.println("当前页的首条记录索引从: 第 " + page.getBeginPageIndex() + " 条开始.");
         System.out.println("*************************************************************************************");
     }
+
+    @Test
+    public void queryByKeyword() {
+        String keyword = "192.168.56.102";
+        List list = accountDao.queryByKeyword(keyword);
+        System.out.println("keyword:\n" + list);
+    }
+
 }

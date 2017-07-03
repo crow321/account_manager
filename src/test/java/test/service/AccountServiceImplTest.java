@@ -1,13 +1,12 @@
-package test.dao;
+package test.service;
 
 import com.jump.account.base.entity.Account;
 import com.jump.account.base.service.impl.AccountServiceImpl;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import test.Junit4BaseTest;
 
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by zhangp on 2017/6/23.

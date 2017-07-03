@@ -35,7 +35,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         ParameterizedType pt = (ParameterizedType) c.getGenericSuperclass();
         Type[] types= pt.getActualTypeArguments();
         clazz = (Class<T>) types[0];
-        LOGGER.info("clazz: {}",clazz.getName());
+        LOGGER.info("clazz: {}", clazz.getName());
     }
 
     protected Session getCurrentSession() {
@@ -68,9 +68,10 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
     }
 
     @Override
-    public boolean deleteByName(String name) {
-        String hql = "delete a from " + clazz.getSimpleName() + " as a where a.name =:name";
+    public boolean deleteByKeyword(String keyword) {
+        String hql = "delete " + clazz.getSimpleName() + " where name like :keyword";
         Query query = getCurrentSession().createQuery(hql);
+        query.setParameter("keyword", "%" + keyword + "%");
         return query.executeUpdate() > 0;
     }
 
@@ -90,5 +91,21 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
     @Override
     public int count(String hql) {
         return Integer.parseInt(getCurrentSession().createQuery(hql).uniqueResult().toString());
+    }
+
+    @Override
+    public List<T> queryByKeyword(String keyword) {
+        LOGGER.debug("receive keyword:{}", keyword);
+
+        //方式一 使用变量 :keyword
+        /*String hql = "from " + clazz.getSimpleName() + " as a where a.message like :keyword";
+        Query query = getCurrentSession().createQuery(hql);
+        query.setParameter("keyword", "%" + keyword + "%");*/
+
+        //方式二 使用占位符
+        String hql = "from Account where url like ?";
+        Query query = getCurrentSession().createQuery(hql);
+        query.setParameter(0, "%" + keyword + "%");
+        return query.list();
     }
 }

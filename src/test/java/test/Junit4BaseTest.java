@@ -1,4 +1,4 @@
-package test.dao;
+package test;
 
 import com.jump.account.base.security.impl.SecurityImplByAES128;
 import org.junit.Test;
