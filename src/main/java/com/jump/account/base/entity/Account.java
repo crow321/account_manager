@@ -94,10 +94,10 @@ public class Account implements Serializable {
 
     @Override
     public String toString() {
-        return "Account{" +
-                "name='" + name + '\'' +
-                ", message='" + message + '\'' +
-                ", time=" + time +
-                '}';
+        return "Account: {" +
+                "\n name='" + name + '\'' +
+                ", \n message='" + message + '\'' +
+                ", \n time=" + time +
+                " }";
     }
 }

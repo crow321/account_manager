@@ -48,8 +48,8 @@ public class AccountServiceImplTest extends Junit4BaseTest {
     public void getAccountByName() throws Exception {
         Account account = accountService.getAccountByName("mysql数据库 key_store");
         System.out.println("**************************************************");
-        System.out.println("account查询结果:\n " + account);
-        System.out.println("password.size: " + account.getPassword().length);
+        System.out.println("account查询结果:\n" + account);
+//        System.out.println("password.size: " + account.getPassword().length);
         System.out.println("password: " + new String(account.getPassword()));
         System.out.println("**************************************************");
 

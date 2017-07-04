@@ -22,7 +22,7 @@ public class AccountServiceImpl implements IAccountService {
     @Autowired
     private AccountDaoImpl accountDao;
     @Autowired
-    private SecurityImplForAES128 securityImplForAES128;
+    private SecurityImplForAES128 security;
     @Autowired
     private ConvertUtil convertUtil;
 
@@ -30,7 +30,7 @@ public class AccountServiceImpl implements IAccountService {
     public boolean saveAccount(Account account) {
         LOGGER.info("receive account,{}", account);
         try {
-            byte[] password = securityImplForAES128.encrypt(account.getPassword());
+            byte[] password = security.encrypt(account.getPassword());
             account.setPassword(password);
             accountDao.insert(account);
         } catch (Exception e) {
@@ -45,7 +45,7 @@ public class AccountServiceImpl implements IAccountService {
         LOGGER.info("receive name: {}", name);
         Account account = accountDao.getOneByName(name);
         byte[] password = account.getPassword();
-        byte[] decPassword = securityImplForAES128.decrypt(password);
+        byte[] decPassword = security.decrypt(password);
         account.setPassword(decPassword);
         return account;
     }
