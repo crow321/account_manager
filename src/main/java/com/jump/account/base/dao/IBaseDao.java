@@ -22,10 +22,10 @@ public interface IBaseDao<T> {
     /**
      * 根据名称删除对象
      *
-     * @param name
+     * @param keyword
      * @return
      */
-    boolean deleteByName(String name);
+    boolean deleteByKeyword(String keyword);
 
     /**
      * 分页查询
