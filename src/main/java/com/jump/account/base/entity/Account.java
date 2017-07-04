@@ -15,6 +15,7 @@ public class Account implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+    //备注
     private String message;
     private String url;
     @Column(name = "USER_NAME")
@@ -94,12 +95,8 @@ public class Account implements Serializable {
     @Override
     public String toString() {
         return "Account{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", message='" + message + '\'' +
-                ", url='" + url + '\'' +
-                ", userName='" + userName + '\'' +
-                ", password=" + Arrays.toString(password) +
                 ", time=" + time +
                 '}';
     }

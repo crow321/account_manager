@@ -1,6 +1,6 @@
 package test;
 
-import com.jump.account.base.security.impl.SecurityImplByAES128;
+import com.jump.account.base.security.impl.SecurityImplForAES128;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.Date;
 public class Junit4BaseTest {
 
     @Autowired
-    private SecurityImplByAES128 securityImplByAES128;
+    private SecurityImplForAES128 securityImplForAES128;
 
     @Test
     public void bytesToHex() {

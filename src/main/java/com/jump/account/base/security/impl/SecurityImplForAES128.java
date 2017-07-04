@@ -2,7 +2,6 @@ package com.jump.account.base.security.impl;
 
 import com.jump.account.base.security.ISecurity;
 import com.jump.account.base.util.ConvertUtil;
-import jdk.nashorn.internal.objects.NativeNumber;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,8 +10,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.security.SecureRandom;
 import java.security.Security;
+import java.util.Arrays;
 
 /**
  * Created by zhangp on 2017/6/23.
@@ -22,44 +25,43 @@ import java.security.Security;
  * 把这两个jar文件解压到JRE目录下的lib/security文件夹，覆盖原来的文件。这样Java就不再限制密钥的长度了。
  */
 @Component
-public class SecurityImplByAES128 implements ISecurity {
+public class SecurityImplForAES128 implements ISecurity {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SecurityImplByAES128.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SecurityImplForAES128.class);
     private static final String algorithm = "AES";
     //算法/模式/补码方式
-    private static final String DEFAULT_CIPHER_ALGORITHM = "AES/ECB/PKCS7Padding";
-    @Value("sharedSecretKey")
+    private static final String DEFAULT_CIPHER_ALGORITHM = "AES/CBC/PKCS7Padding";
+    private byte[] iv = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    @Value("${sharedSecretKey}")
     private String sharedSecretKey;
     @Autowired
     private ConvertUtil convertUtil;
 
     /**
      * 对原始数据进行加密
-     *
      * @param src 需要加密的原始数据
      * @return 加密数据
      */
     @Override
     public byte[] encrypt(byte[] src) {
+        LOGGER.info("encrypt> source data:{}", convertUtil.bytesToHexString(src));
         if (src == null || src.length <= 0) {
             LOGGER.error("需要加密的数据为空或长度为 0 ! {}", src);
             return null;
         }
 
-        byte[] bytes = new byte[16];
-        if (src.length < 16) {
-            System.arraycopy(src, 0, bytes, 0, src.length);
-        }
-
+        byte[] encryptResult;
         try {
             SecretKeySpec key = getKey();
             Cipher enCipher = Cipher.getInstance(DEFAULT_CIPHER_ALGORITHM);
-            enCipher.init(Cipher.ENCRYPT_MODE, key);
-            return enCipher.doFinal(bytes);
+            enCipher.init(Cipher.ENCRYPT_MODE, key, new IvParameterSpec(iv));
+            encryptResult = enCipher.doFinal(src);
         } catch (Exception e) {
-            LOGGER.error("encrypt error:\n{}", e);
-            return new byte[0];
+            LOGGER.error("encrypt error:{}", e);
+            return null;
         }
+        LOGGER.info("return encrypt:{}", convertUtil.bytesToHexString(encryptResult));
+        return encryptResult;
     }
 
     /**
@@ -70,29 +72,40 @@ public class SecurityImplByAES128 implements ISecurity {
      */
     @Override
     public byte[] decrypt(byte[] encryptData) {
+        LOGGER.info("before decrypt: {}", convertUtil.bytesToHexString(encryptData));
+        byte[] decryptBytes;
         try {
             //加密秘钥
             SecretKeySpec key = getKey();
             Cipher deCipher = Cipher.getInstance(DEFAULT_CIPHER_ALGORITHM);
-            deCipher.init(Cipher.DECRYPT_MODE, key);
-            return decrypt(encryptData);
+            deCipher.init(Cipher.DECRYPT_MODE, key, new IvParameterSpec(iv));
+            decryptBytes = deCipher.doFinal(encryptData);
         } catch (Exception e) {
             LOGGER.error("decrypt error: {}", e);
-            return new byte[0];
+            return null;
         }
+        LOGGER.info("after decrypt: {}", convertUtil.bytesToHexString(decryptBytes));
+        return decryptBytes;
     }
 
     /**
      * 将加密秘钥字符串转为字节数组
-     *
      * @return 返回共享的加密秘钥
      */
     private SecretKeySpec getKey() {
         //
         Security.addProvider(new BouncyCastleProvider());
         try {
-            byte[] key = sharedSecretKey.getBytes("utf-8");
-            return new SecretKeySpec(key, algorithm);
+            byte[] key = sharedSecretKey.getBytes();
+            if (key.length % 16 != 0) {
+                int count = key.length / 16 + 1;
+                byte[] bytes = new byte[count * 16];
+                System.arraycopy(key, 0, bytes, 0, key.length);
+                key = bytes;
+            }
+            KeyGenerator kgen = KeyGenerator.getInstance(algorithm);
+            kgen.init(128, new SecureRandom(key));
+            return new SecretKeySpec(kgen.generateKey().getEncoded(), algorithm);
         } catch (Exception e) {
             LOGGER.error("get secretKeySpec error: {}", e);
             return null;

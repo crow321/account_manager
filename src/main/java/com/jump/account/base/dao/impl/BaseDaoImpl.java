@@ -47,7 +47,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         try {
             getCurrentSession().save(entity);
         } catch (Exception e) {
-            LOGGER.error("insert error!\n{}", e);
+            LOGGER.error("insert error: {}", e);
             return false;
         }
         return true;

@@ -1,5 +1,7 @@
 package com.jump.account.base.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
@@ -9,6 +11,8 @@ import java.io.UnsupportedEncodingException;
  */
 @Component
 public class ConvertUtil {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ConvertUtil.class);
 
     public String bytesToHexString(byte[] bytes) {
         StringBuilder stringBuilder = new StringBuilder("");
@@ -53,6 +57,7 @@ public class ConvertUtil {
 
     public byte[] stringToBytes16(String data) {
         if (data == null || data.equals("")) {
+            LOGGER.error("parameter is null or ''...");
             return null;
         }
 
@@ -65,7 +70,5 @@ public class ConvertUtil {
             e.printStackTrace();
             return null;
         }
-
-
     }
 }

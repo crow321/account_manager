@@ -21,4 +21,6 @@ public interface IAccountService {
 
     String getPasswordByUserName(String userName);
 
+    boolean deleteByKeyword(String keyword);
+
 }
