@@ -69,7 +69,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
 
     @Override
     public boolean deleteByKeyword(String keyword) {
-        String hql = "delete " + clazz.getSimpleName() + " where name like :keyword";
+        String hql = "delete " + clazz.getSimpleName() + " as a where a.name like :keyword";
         Query query = getCurrentSession().createQuery(hql);
         query.setParameter("keyword", "%" + keyword + "%");
         return query.executeUpdate() > 0;
@@ -103,7 +103,8 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         query.setParameter("keyword", "%" + keyword + "%");*/
 
         //方式二 使用占位符
-        String hql = "from Account where url like ?";
+        String hql = "from Account where url like ? " +
+                "or name like ?";
         Query query = getCurrentSession().createQuery(hql);
         query.setParameter(0, "%" + keyword + "%");
         return query.list();

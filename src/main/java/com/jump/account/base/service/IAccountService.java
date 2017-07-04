@@ -3,6 +3,8 @@ package com.jump.account.base.service;
 import com.jump.account.base.entity.Account;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by zhangp on 2017/6/23.
  */
@@ -19,8 +21,16 @@ public interface IAccountService {
 
     Account getAccountByName(String name);
 
-    String getPasswordByUserName(String userName);
+    /**
+     * 通过username       进行模糊查询
+     *
+     * @param userName 关键字
+     * @return 返回匹配到的结果
+     */
+    List<String> getPasswordByUserName(String userName);
 
     boolean deleteByKeyword(String keyword);
+
+    void update(Account account);
 
 }

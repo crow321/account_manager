@@ -5,13 +5,13 @@ import com.jump.account.base.entity.Account;
 import com.jump.account.base.security.impl.SecurityImplForAES128;
 import com.jump.account.base.service.IAccountService;
 import com.jump.account.base.util.ConvertUtil;
-import com.jump.account.base.vo.Page;
-import org.jboss.logging.Cause;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.rmi.runtime.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by zhangp on 2017/6/23.
@@ -51,14 +51,30 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public String getPasswordByUserName(String userName) {
-        Account account = accountDao.getOneByName(userName);
-
-        return new String(account.getPassword());
+    public List<String> getPasswordByUserName(String userName) {
+        LOGGER.info("get password by userName:{}", userName);
+        List<Account> accounts = accountDao.queryByKeyword(userName);
+        List<String> passwordList = new ArrayList<String>();
+        for (Account account : accounts) {
+            byte[] password = account.getPassword();
+            byte[] decPassword = security.decrypt(password);
+            passwordList.add(new String(decPassword));
+        }
+        return passwordList;
     }
 
     @Override
     public boolean deleteByKeyword(String keyword) {
         return accountDao.deleteByKeyword(keyword);
+    }
+
+    @Override
+    public void update(Account account) {
+        LOGGER.info("receive update account,{}", account);
+        if (account.getPassword() != null) {
+            byte[] password = security.encrypt(account.getPassword());
+            account.setPassword(password);
+        }
+        accountDao.update(account);
     }
 }

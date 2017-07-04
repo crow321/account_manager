@@ -12,6 +12,7 @@ import test.Junit4BaseTest;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by zhangp on 2017/6/23.
@@ -55,6 +56,12 @@ public class AccountServiceImplTest extends Junit4BaseTest {
 
     }
 
+    @Test
+    public void getPasswordByUserName() throws Exception {
+        String userName = "mysql";
+        List list = accountService.getPasswordByUserName(userName);
+        System.out.println("list: " + list);
+    }
     @Test
     public void getAccountByUserName() throws Exception {
     }
