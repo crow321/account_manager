@@ -14,12 +14,18 @@
     </listener>-->
 
     <servlet>
-        <servlet-name>account</servlet-name>
+        <servlet-name>account-servlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!-- 初始化应用上下文对象 -->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath*:applicationContext.xml</param-value>
+        </init-param>
+        <!-- 设置启动优先级 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>account</servlet-name>
+        <servlet-name>account-servlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>

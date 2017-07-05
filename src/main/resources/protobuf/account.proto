@@ -1,0 +1,11 @@
+syntax = "proto3";
+package com.jump.account.base.protobuf;
+option java_outer_classname = "AccountOuterClass";
+message AccountMessage {
+    int32 id = 1;
+    string name = 2;
+    string message = 3;
+    string url = 4;
+    string user_name = 5;
+    bytes password = 6;
+}

@@ -32,6 +32,7 @@ public class SecurityImplForAES128 implements ISecurity {
     //算法/模式/补码方式
     private static final String DEFAULT_CIPHER_ALGORITHM = "AES/CBC/PKCS7Padding";
     private byte[] iv = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
     @Value("${sharedSecretKey}")
     private String sharedSecretKey;
     @Autowired
