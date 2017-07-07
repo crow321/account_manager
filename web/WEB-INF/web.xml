@@ -4,28 +4,28 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <!--<context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath*:applicationContext.xml</param-value>
-    </context-param>-->
+    <!-- <context-param>
+         <param-name>contextConfigLocation</param-name>
+         <param-value>classpath*:applicationContext.xml</param-value>
+     </context-param>-->
 
     <!--<listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>-->
 
     <servlet>
-        <servlet-name>account-servlet</servlet-name>
+        <servlet-name>account</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!-- 初始化应用上下文对象 -->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath*:applicationContext.xml</param-value>
+            <param-value>/WEB-INF/account-servlet.xml</param-value>
         </init-param>
         <!-- 设置启动优先级 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>account-servlet</servlet-name>
+        <servlet-name>account</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>

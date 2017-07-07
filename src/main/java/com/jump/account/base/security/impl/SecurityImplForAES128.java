@@ -24,7 +24,7 @@ import java.util.Arrays;
  * 在Java SE的下载页面下面的Additional Resources那里会有下载链接。下载后打开压缩包，里面有两个jar文件。
  * 把这两个jar文件解压到JRE目录下的lib/security文件夹，覆盖原来的文件。这样Java就不再限制密钥的长度了。
  */
-@Component
+@Component("iSecurity")
 public class SecurityImplForAES128 implements ISecurity {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SecurityImplForAES128.class);
@@ -45,7 +45,7 @@ public class SecurityImplForAES128 implements ISecurity {
      */
     @Override
     public byte[] encrypt(byte[] src) {
-        LOGGER.info("encrypt> source data:{}", convertUtil.bytesToHexString(src));
+        LOGGER.info("before encrypt, src :{}", convertUtil.bytesToHexString(src));
         if (src == null || src.length <= 0) {
             LOGGER.error("需要加密的数据为空或长度为 0 ! {}", src);
             return null;
@@ -58,10 +58,10 @@ public class SecurityImplForAES128 implements ISecurity {
             enCipher.init(Cipher.ENCRYPT_MODE, key, new IvParameterSpec(iv));
             encryptResult = enCipher.doFinal(src);
         } catch (Exception e) {
-            LOGGER.error("encrypt error:{}", e);
+            LOGGER.error("encrypt error: {}", e);
             return null;
         }
-        LOGGER.info("return encrypt:{}", convertUtil.bytesToHexString(encryptResult));
+        LOGGER.info("after encrypt, data: {}", convertUtil.bytesToHexString(encryptResult));
         return encryptResult;
     }
 

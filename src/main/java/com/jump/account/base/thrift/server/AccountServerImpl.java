@@ -22,12 +22,12 @@ public class AccountServerImpl implements IAccountServer {
     private static final Logger LOGGER = LoggerFactory.getLogger(AccountServerImpl.class);
 
     @Value("${serverTransport}")
-    private int SERVER_TRANSPORT;
+    private int server_transport;
 
     @Override
     public void run() {
         try {
-            TNonblockingServerSocket serverTransport = new TNonblockingServerSocket(SERVER_TRANSPORT, 10000);
+            TNonblockingServerSocket serverTransport = new TNonblockingServerSocket(server_transport, 10000);
             TProcessor processor = new AccountService.Processor<AccountService.Iface>(new AccountServiceImpl());
 
             Args args = new Args(serverTransport);
@@ -37,7 +37,7 @@ public class AccountServerImpl implements IAccountServer {
 
             TServer server = new TNonblockingServer(args);
 
-            LOGGER.info("AServer start on port {}...", SERVER_TRANSPORT);
+            LOGGER.info("AServer start on port {}...", server_transport);
             LOGGER.info("使用非阻塞、单线程、二进制编码通信...");
 
             server.serve();
