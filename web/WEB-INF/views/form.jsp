@@ -14,10 +14,13 @@
 <body>
     <h1>使用 GET 方法读取数据</h1>
     <ul>
+        <li><a href="/home">首页</a></li>
+    </ul>
+    <ul>
         <li><p>
             <b>站点名:</b>
             <%=request.getParameter("name")%>
-            </p>
+        </p>
         </li>
         <li>
             <p>

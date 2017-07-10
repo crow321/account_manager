@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by zhangp on 2017/6/23.
  */
-@Service
+@Service()
 public class AccountBaseServiceImpl implements IAccountService {
     private static final Logger LOGGER = LoggerFactory.getLogger(AccountBaseServiceImpl.class);
     @Autowired

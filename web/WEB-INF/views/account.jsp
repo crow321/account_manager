@@ -9,19 +9,44 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Account 数据保存表单</title>
+    <title>Account管理系统-用户管理</title>
 </head>
 <body>
-    <form action="account.jsp" method="get">
+<h1>用户管理</h1>
+<%-- <div class="container negative">
+     <div class="row">
+         <div class="col nav0">
+             <ul class="pagination-control">
+                 <li>
+                     <a href="http://localhost:8080/">首页</a>
+                 </li>
+                 <li>
+                     <a href="http://localhost:8080/form">表单</a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </div>--%>
+<ul>
+    <li><a href="http://localhost:8080">首页</a></li>
+    <div style="color:#0000F1">
+        <li><a href="http://localhost:8080/account/">增加用户</a></li>
+        <li><a href="http://localhost:8080/account/">查询用户</a></li>
+        <li><a href="http://localhost:8080/account/">修改用户</a></li>
+        <li><a href="http://localhost:8080/account/">删除用户</a></li>
+    </div>
+</ul>
+
+<form action="/form" method="get">
         站点名: <input type="text" name="name"/>
         <br />
         网  址: <input type="text" name="url"/>
         <input type="submit" name="提交"/>
     </form>
 
-    <h4>获取时间的方法: ${requestScope.name}</h4>
+<h4>获取时间的方法: ${requestScope.method}</h4>
         显示当前时间和日期:<br>
         <%-- 获取model中添加的time ，下面三种方式相同--%>
-        ${requestScope.time}<br>
+${requestScope.get("time")}<br>
 </body>
 </html>
