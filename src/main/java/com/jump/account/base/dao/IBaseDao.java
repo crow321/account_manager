@@ -29,13 +29,13 @@ public interface IBaseDao<T> {
 
     /**
      * 分页查询
-     *
+     * @param hql
      * @param startRecordIndex 从该位置后开始记录
      * @param perPageSize      每页的容量
      * @return
      */
+    Page queryForPageByHql(String hql, int startRecordIndex, int perPageSize);
     Page queryForPage(int startRecordIndex, int perPageSize);
-
     /**
      * 根据 HQL 语句统计数量
      *

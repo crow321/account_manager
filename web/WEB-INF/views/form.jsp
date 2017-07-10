@@ -17,10 +17,11 @@
         <li><a href="/home">首页</a></li>
     </ul>
     <ul>
-        <li><p>
-            <b>站点名:</b>
-            <%=request.getParameter("name")%>
-        </p>
+        <li>
+            <p>
+                <b>名称:</b>
+                <%=request.getParameter("name")%>
+            </p>
         </li>
         <li>
             <p>

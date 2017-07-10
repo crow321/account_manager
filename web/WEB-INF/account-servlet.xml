@@ -16,7 +16,7 @@
     <context:component-scan base-package="com.jump.account.web.controller"/>
 
     <!-- 静态资源(js、image等)的访问 -->
-    <!--<mvc:default-servlet-handler/>-->
+    <mvc:default-servlet-handler/>
 
     <!-- 开启注解 -->
     <mvc:annotation-driven/>

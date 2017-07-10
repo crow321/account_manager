@@ -98,6 +98,6 @@ public class Account implements Serializable {
                 "\n name='" + name + '\'' +
                 ", \n message='" + message + '\'' +
                 ", \n time=" + time +
-                " }";
+                '}';
     }
 }

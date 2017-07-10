@@ -2,7 +2,7 @@ package test.service;
 
 import com.jump.account.base.entity.Account;
 import com.jump.account.base.security.ISecurity;
-import com.jump.account.base.service.impl.AccountBaseServiceImpl;
+import com.jump.account.base.service.impl.AccountServiceImpl;
 import com.jump.account.base.util.ConvertUtil;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +16,9 @@ import java.util.List;
 /**
  * Created by zhangp on 2017/6/23.
  */
-public class AccountBaseServiceImplTest extends Junit4BaseTest {
+public class AccountServiceImplTest extends Junit4BaseTest {
     @Autowired
-    private AccountBaseServiceImpl accountService;
+    private AccountServiceImpl accountService;
     @Autowired
     private ISecurity security;
     @Autowired

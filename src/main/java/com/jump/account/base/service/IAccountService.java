@@ -1,6 +1,7 @@
 package com.jump.account.base.service;
 
 import com.jump.account.base.entity.Account;
+import com.jump.account.base.vo.Page;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,4 +34,5 @@ public interface IAccountService {
 
     void update(Account account);
 
+    Page queryForPageByKeyword(String keyword);
 }

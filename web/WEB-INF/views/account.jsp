@@ -30,20 +30,20 @@
 <ul>
     <li><a href="http://localhost:8080">首页</a></li>
     <div style="color:#0000F1">
-        <li><a href="http://localhost:8080/account/">增加用户</a></li>
-        <li><a href="http://localhost:8080/account/">查询用户</a></li>
-        <li><a href="http://localhost:8080/account/">修改用户</a></li>
-        <li><a href="http://localhost:8080/account/">删除用户</a></li>
+        <li><a href="/account/add">增加用户</a></li>
+        <li><a href="http://localhost:8080/account/get">查询用户</a></li>
+        <li><a href="http://localhost:8080/account/update">修改用户</a></li>
+        <li><a href="http://localhost:8080/account/del">删除用户</a></li>
     </div>
 </ul>
 
-<form action="/form" method="get">
-        站点名: <input type="text" name="name"/>
-        <br />
-        网  址: <input type="text" name="url"/>
-        <input type="submit" name="提交"/>
-    </form>
-
+<%-- <form action="/form" method="get">
+     站点名: <input type="text" name="name"/>
+     <br />
+     网  址: <input type="text" name="url"/><br>
+     <input type="submit" name="提交"/>
+ </form>
+--%>
 <h4>获取时间的方法: ${requestScope.method}</h4>
         显示当前时间和日期:<br>
         <%-- 获取model中添加的time ，下面三种方式相同--%>

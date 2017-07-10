@@ -1,7 +1,7 @@
 package com.jump.account.base.thrift.server;
 
 import com.jump.account.base.thrift.AccountService;
-import com.jump.account.base.thrift.impl.AccountServiceImpl;
+import com.jump.account.base.thrift.impl.TAccountServiceImpl;
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.TProcessorFactory;
 import org.apache.thrift.protocol.TBinaryProtocol;
@@ -28,7 +28,7 @@ public class AccountServerImpl implements IAccountServer {
     public void run() {
         try {
             TNonblockingServerSocket serverTransport = new TNonblockingServerSocket(server_transport, 10000);
-            TProcessor processor = new AccountService.Processor<AccountService.Iface>(new AccountServiceImpl());
+            TProcessor processor = new AccountService.Processor<AccountService.Iface>(new TAccountServiceImpl());
 
             Args args = new Args(serverTransport);
             args.processorFactory(new TProcessorFactory(processor));

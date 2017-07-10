@@ -11,7 +11,9 @@
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
-    <context:component-scan base-package="com.jump.account.base"/>
+    <context:component-scan base-package="com.jump.account.base">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
 
     <import resource="classpath:hibernate.xml"/>
 

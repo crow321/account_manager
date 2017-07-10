@@ -74,18 +74,22 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         query.setParameter("keyword", "%" + keyword + "%");
         return query.executeUpdate() > 0;
     }
-
     @Override
     public Page queryForPage(int startRecordIndex, int perPageSize) {
         String hql = "from Account";
-        String countHql = "select count(*) from Account";
+        return queryForPageByHql(hql, startRecordIndex, perPageSize);
+    }
+
+    @Override
+    public Page queryForPageByHql(String hql, int startRecordIndex, int perPageSize) {
+//        String hql = "from Account";
+//        String countHql = "select count(*) from Account";
         Query query = getCurrentSession().createQuery(hql);
         query.setFirstResult(startRecordIndex).setMaxResults(perPageSize);
         List<Account> list = query.list();
-        int totalRecordNumber = this.count(countHql);
+        int totalRecordNumber = list.size();
 
-        Page page = PageUtil.createPage(totalRecordNumber, perPageSize, startRecordIndex, list);
-        return page;
+        return PageUtil.createPage(totalRecordNumber, perPageSize, startRecordIndex, list);
     }
 
     @Override
@@ -103,8 +107,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         query.setParameter("keyword", "%" + keyword + "%");*/
 
         //方式二 使用占位符
-        String hql = "from Account where url like ? " +
-                "or name like ?";
+        String hql = "from Account where name like ?";
         Query query = getCurrentSession().createQuery(hql);
         query.setParameter(0, "%" + keyword + "%");
         return query.list();

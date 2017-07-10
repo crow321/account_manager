@@ -7,6 +7,7 @@ import java.util.List;
  * Created by zhangp on 2017/6/28.
  */
 public class Page {
+    public static final int PERPAGE_SIZE = 20;
     //总记录数
     private int totalRecordNumber;
     //每页容量

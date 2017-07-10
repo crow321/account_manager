@@ -26,7 +26,7 @@ public class AccountDaoImplTest extends Junit4BaseTest {
         account.setMessage("DNS: 192.168.90.253/8.8.8.8");
         account.setUrl("192.168.90.90/24 GW:192.168.90.1");
         account.setUserName("");
-        account.setPassword("".getBytes());
+        account.setPassword("1".getBytes());
         boolean result = accountDao.insert(account);
         System.out.println("insert: " + result);
 

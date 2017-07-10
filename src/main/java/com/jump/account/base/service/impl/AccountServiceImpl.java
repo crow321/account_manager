@@ -5,6 +5,8 @@ import com.jump.account.base.entity.Account;
 import com.jump.account.base.security.impl.SecurityImplForAES128;
 import com.jump.account.base.service.IAccountService;
 import com.jump.account.base.util.ConvertUtil;
+import com.jump.account.base.util.PageUtil;
+import com.jump.account.base.vo.Page;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +19,8 @@ import java.util.List;
  * Created by zhangp on 2017/6/23.
  */
 @Service()
-public class AccountBaseServiceImpl implements IAccountService {
-    private static final Logger LOGGER = LoggerFactory.getLogger(AccountBaseServiceImpl.class);
+public class AccountServiceImpl implements IAccountService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(AccountServiceImpl.class);
     @Autowired
     private AccountDaoImpl accountDao;
     @Autowired
@@ -76,5 +78,21 @@ public class AccountBaseServiceImpl implements IAccountService {
             account.setPassword(password);
         }
         accountDao.update(account);
+    }
+
+    @Override
+    public Page queryForPageByKeyword(String keyword) {
+        List<Account> list = accountDao.queryByKeyword(keyword);
+        int totalAccountNumber = list.size();
+        Page page = new Page();
+        page.setTotalPageNumber(totalAccountNumber);
+        page.setList(list);
+        page.setHasNextPage(true);
+        page.setperPageSize(Page.PERPAGE_SIZE);
+        page.setBeginPageIndex(1);
+        page.setCurrentPageIndex(1);
+        page.setHasPrePage(false);
+        page.setTotalPageNumber(PageUtil.getTotalPageNumber(totalAccountNumber, Page.PERPAGE_SIZE));
+        return page;
     }
 }

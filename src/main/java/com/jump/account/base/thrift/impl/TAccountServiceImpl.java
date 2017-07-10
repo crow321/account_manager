@@ -21,8 +21,8 @@ import java.util.List;
  * Created by zhangp on 2017/7/5.
  */
 @Service
-public class AccountServiceImpl implements AccountService.Iface {
-    private static final Logger LOGGER = LoggerFactory.getLogger(AccountServiceImpl.class);
+public class TAccountServiceImpl implements AccountService.Iface {
+    private static final Logger LOGGER = LoggerFactory.getLogger(TAccountServiceImpl.class);
 
     @Autowired
     private AccountDaoImpl accountDao;
