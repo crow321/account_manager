@@ -35,4 +35,6 @@ public interface IAccountService {
     void update(Account account);
 
     Page queryForPageByKeyword(String keyword);
+
+    int countAccount(String hql);
 }

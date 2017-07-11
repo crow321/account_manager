@@ -23,22 +23,28 @@
     <li><a href="/account/">用户管理</a></li>
 </ul>
 <%--脚本程序的语法格式：<% java代码片段 %> --%>
-<%
+<%--<%
     int count = 10;
     String s = "Your IP address is " + request.getRemoteAddr();
 %>
-<%-- 引用上面定义的变量: <%=变量名%> --%>
+&lt;%&ndash; 引用上面定义的变量: <%=变量名%> &ndash;%&gt;
 <p>count: <%=count%>
 </p>
 <p><%=s%>
-</p>
+</p>--%>
 
-<h4>获取时间的方法: ${requestScope.name}<h4>
-    显示当前时间和日期:<br>
+<div>
+    <p>账号总数: </p>
+    <p>${totalAccountCount}</p>
+</div>
+
+<span>显示当前时间和日期:</span><br>
     <%-- 获取model中添加的time ，下面三种方式相同--%>
-    ${requestScope.time}<br>
+<span>${requestScope.time}</span><br>
     <%--${requestScope.get("time")}<br>--%>
     <%--${time}--%>
+
+
 </body>
 
 </html>

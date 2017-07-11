@@ -352,7 +352,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.jump.account.base.thrift.server.AccountServerImpl</mainClass>
+                            <mainClass>com.jump.account.BootStrap</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -1,8 +1,6 @@
 package com.jump.account.web.controller;
 
-import com.jump.account.base.entity.Account;
 import com.jump.account.base.service.impl.AccountServiceImpl;
-import com.jump.account.base.vo.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,14 +16,15 @@ import java.util.Date;
 @Controller
 @RequestMapping("/")
 public class HomeController {
-   /* @Autowired
-    private ProtoBufUtil protoBufUtil;*/
+    @Autowired
+    private AccountServiceImpl accountService;
 
     @RequestMapping(value = {"home", ""}, method = RequestMethod.GET)
     public String showHome(Model model) {
-
+        int count = accountService.countAccount("account");
+        System.out.println("count: " + count);
         model.addAttribute("time", new Date());
-        model.addAttribute("name", "HomeController.showHome");
+        model.addAttribute("totalAccountCount", count);
         return "home";
     }
 }

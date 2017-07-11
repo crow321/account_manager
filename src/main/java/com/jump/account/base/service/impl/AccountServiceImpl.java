@@ -95,4 +95,11 @@ public class AccountServiceImpl implements IAccountService {
         page.setTotalPageNumber(PageUtil.getTotalPageNumber(totalAccountNumber, Page.PERPAGE_SIZE));
         return page;
     }
+
+    @Override
+    public int countAccount(String hql) {
+        hql = "select count(*) from Account";
+        return accountDao.count(hql);
+    }
+
 }
