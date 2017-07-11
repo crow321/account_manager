@@ -7,10 +7,7 @@ import com.jump.account.base.thrift.AccountService;
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
-import org.apache.thrift.transport.TFramedTransport;
-import org.apache.thrift.transport.TSocket;
-import org.apache.thrift.transport.TTransport;
-import org.apache.thrift.transport.TTransportException;
+import org.apache.thrift.transport.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,6 +15,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 /**
@@ -29,9 +27,22 @@ public class Client {
 
     private static final int server_transport = 8990;
     private static ISecurity security;
+    private static AccountService.Client client;
+    private static TTransport tTransport;
+    private static int count = 0;
+    private static int flag = 1;
 
     public static void main(String[] args) {
         start();
+        while (true) {
+
+            count++;
+            if (count > flag) {
+                break;
+            }
+            sendSaveAccount();
+        }
+
     }
 
 
@@ -39,23 +50,19 @@ public class Client {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         security = (ISecurity) context.getBean("iSecurity");
 
-//        TTransport transport = new TFramedTransport(new TSocket("192.168.56.102", server_transport));
-        TTransport transport = new TFramedTransport(new TSocket("127.0.0.1", server_transport));
-        TProtocol tProtocol = new TBinaryProtocol(transport);
-        AccountService.Client Client = new AccountService.Client(tProtocol);
-
-//        sendSaveAccount(Client, transport);
-        sendGetAccountByKeyword(Client, transport);
+//        tTransport = new TFramedTransport(new TSocket("192.168.56.102", server_transport));
+        tTransport = new TFramedTransport(new TSocket("127.0.0.1", server_transport));
+        TProtocol tProtocol = new TBinaryProtocol(tTransport);
+        client = new AccountService.Client(tProtocol);
     }
 
-    private static void sendSaveAccount(AccountService.Client client, TTransport tTransport) {
+    private static void sendSaveAccount() {
         AccountOuterClass.AccountMessage.Builder builder = AccountOuterClass.AccountMessage.newBuilder();
-        builder.setName("test");
+        builder.setName("test" + count);
         builder.setUrl("1");
         builder.setMessage("message");
         builder.setUserName("root");
         builder.setPassword(ByteString.copyFrom("password".getBytes()));
-
         ByteBuffer byteBuffer = ByteBuffer.wrap(builder.build().toByteArray());
 
         try {
@@ -70,7 +77,7 @@ public class Client {
         }
     }
 
-    private static void sendGetAccountByKeyword(AccountService.Client client, TTransport tTransport) {
+    private static void sendGetAccountByKeyword() {
         String keyword = "mysql";
         try {
             tTransport.open();

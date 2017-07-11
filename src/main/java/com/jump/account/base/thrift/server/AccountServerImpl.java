@@ -38,7 +38,6 @@ public class AccountServerImpl implements IAccountServer {
             TServer server = new TNonblockingServer(args);
 
             LOGGER.info("AServer start on port {}...", server_transport);
-            LOGGER.info("使用非阻塞、单线程、二进制编码通信...");
 
             server.serve();
         } catch (TTransportException e) {

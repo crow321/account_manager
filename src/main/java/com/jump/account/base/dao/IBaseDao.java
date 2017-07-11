@@ -51,4 +51,12 @@ public interface IBaseDao<T> {
      * @return 返回匹配到的所有对象
      */
     List<T> queryByKeyword(String keyword);
+
+    /**
+     * 延迟加载
+     *
+     * @param id
+     * @return
+     */
+    T loadById(Long id);
 }

@@ -56,6 +56,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
     @SuppressWarnings("unchecked")
     @Override
     public T getOneByName(String name) {
+        LOGGER.info("Receive getOneByName, name:{}", name);
         String hql = "select a from " + clazz.getSimpleName() + " as a where a.name =:name";
         Query query = getCurrentSession().createQuery(hql);
         query.setParameter("name", name);
@@ -111,5 +112,15 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         Query query = getCurrentSession().createQuery(hql);
         query.setParameter(0, "%" + keyword + "%");
         return query.list();
+    }
+
+    @Override
+    public T loadById(Long id) {
+        LOGGER.info("Receive loadById, id:{}", id);
+        T t = getCurrentSession().load(clazz, id);
+        //todo
+        //下面一行必须存在，否则使用调用该方法时出错
+        LOGGER.info("load T:{}", t);
+        return t;
     }
 }

@@ -54,6 +54,7 @@
     <tx:advice id="txAdvice">
         <tx:attributes>
             <tx:method name="insert" propagation="REQUIRED" read-only="false"/>
+            <!--<tx:method name="loadById" propagation="REQUIRED"/>-->
             <tx:method name="*" propagation="REQUIRED" read-only="false"/>
         </tx:attributes>
     </tx:advice>

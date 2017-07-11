@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by zhangp on 2017/6/22.
@@ -22,6 +23,10 @@ public class Account implements Serializable {
     private String userName;
     private byte[] password;
     private Date time;
+
+    //使用mappedBy 方式指定集合中的对象Address是通过 Address 中的 account 属性关联到 Account对象的
+    @OneToMany(mappedBy = "account", cascade = CascadeType.ALL)
+    private Set<Address> addressSet;
 
     public Account() {
     }
@@ -99,5 +104,13 @@ public class Account implements Serializable {
                 ", \n message='" + message + '\'' +
                 ", \n time=" + time +
                 '}';
+    }
+
+    public Set<Address> getAddressSet() {
+        return addressSet;
+    }
+
+    public void setAddressSet(Set<Address> addressSet) {
+        this.addressSet = addressSet;
     }
 }

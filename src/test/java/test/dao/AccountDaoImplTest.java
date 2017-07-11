@@ -69,4 +69,12 @@ public class AccountDaoImplTest extends Junit4BaseTest {
         System.out.println("keyword:\n" + list);
     }
 
+    @Test
+    public void loadById() {
+        Account account = accountDao.getOneByName("centos7");
+        long id = account.getId();
+        Account acc = accountDao.loadById(id);
+        System.out.println("*******************\n" + acc.getName());
+    }
+
 }
