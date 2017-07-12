@@ -36,6 +36,13 @@
                 <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
                 <!-- JDBC connection pool (use the built-in) -->
                 <prop key="hibernate.connection.pool_size">${hibernate.connection.pool_size}</prop>
+
+                <!-- 开启二级缓存 -->
+                <prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+                <prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+                <prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>
+                <!--<prop key="hibernate.cache.provider_class">${hibernate.cache.provider_class}</prop>-->
+                <prop key="hibernate.cache.provider_configuration_file_resource_path">ehcache.xml</prop>
             </props>
         </property>
     </bean>

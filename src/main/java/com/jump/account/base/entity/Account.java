@@ -1,8 +1,15 @@
 package com.jump.account.base.entity;
 
+import org.hibernate.annotations.*;
+
 import javax.persistence.*;
+import javax.persistence.CascadeType;
+
+import org.hibernate.annotations.Cache;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.Set;
 
@@ -10,10 +17,11 @@ import java.util.Set;
  * Created by zhangp on 2017/6/22.
  */
 @Entity
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 @Table(name = "account_manager")
 public class Account implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private long id;
     private String name;
     //备注

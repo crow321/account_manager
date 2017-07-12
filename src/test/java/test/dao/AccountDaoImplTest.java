@@ -3,6 +3,7 @@ package test.dao;
 import com.jump.account.base.dao.impl.AccountDaoImpl;
 import com.jump.account.base.entity.Account;
 import com.jump.account.base.vo.Page;
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import test.Junit4BaseTest;
@@ -20,15 +21,23 @@ public class AccountDaoImplTest extends Junit4BaseTest {
     @Test
     public void insert() throws Exception {
 
-        Account account = new Account();
-        account.setName("本地PC机静态IP");
-        account.setTime(new Date());
-        account.setMessage("DNS: 192.168.90.253/8.8.8.8");
-        account.setUrl("192.168.90.90/24 GW:192.168.90.1");
-        account.setUserName("");
-        account.setPassword("1".getBytes());
-        boolean result = accountDao.insert(account);
-        System.out.println("insert: " + result);
+        for (int i = 1; i < 10; i++) {
+            Account account = new Account();
+            account.setName("testwwww" + i);
+            account.setTime(new Date());
+            account.setId(i);
+            account.setMessage("1");
+            account.setUrl("1");
+            account.setUserName("1");
+            account.setPassword(("aa" + i).getBytes());
+            //boolean result = accountDao.insert(account);
+//            Assert.assertTrue(result);
+            System.out.println("插入数量: " + i);
+            long start = System.currentTimeMillis();
+            Account res = accountDao.loadById((long) i);
+            System.out.println("load(" + i + "),耗时：" + (System.currentTimeMillis() - start));
+//            System.out.println("load:"+res.getName());
+        }
 
        /* Account account = new Account();
         boolean res = accountDao.insert(account);
@@ -38,6 +47,10 @@ public class AccountDaoImplTest extends Junit4BaseTest {
 
     @Test
     public void getOneByName() throws Exception {
+        for (int i = 0; i < 100; i++) {
+            accountDao.getOneByName("testq" + i);
+            System.out.println("get第 " + i + "个");
+        }
     }
 
     @Test
@@ -71,10 +84,17 @@ public class AccountDaoImplTest extends Junit4BaseTest {
 
     @Test
     public void loadById() {
-        Account account = accountDao.getOneByName("centos7");
-        long id = account.getId();
-        Account acc = accountDao.loadById(id);
-        System.out.println("*******************\n" + acc.getName());
+        long count = 1022;
+        while (true) {
+
+            Account acc = accountDao.loadById(count);
+            System.out.println("*******************\n" + acc.getName());
+            count++;
+            if (count > 1050) {
+                break;
+            }
+        }
+
     }
 
 }

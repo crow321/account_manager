@@ -123,10 +123,10 @@ public class AccountController {
     public String delAccount(HttpServletRequest req, Model model) {
 
         String keyword = req.getParameter("keyword");
-        LOGGER.error("delAccount ,length:{}", req.getContentLength());
+        LOGGER.debug("********* Receive delAccount ********* Req.length:{}", req.getContentLength());
 
-        if (keyword == null) {
-            LOGGER.error("delAccount null");
+        if (keyword == null || keyword.equals("")) {
+            LOGGER.warn("********* Receive delAccount ********* NULL ********");
             return "account_delete";
         }
         boolean isDelete = accountService.deleteByKeyword(keyword);

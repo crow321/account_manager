@@ -120,7 +120,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
         T t = getCurrentSession().load(clazz, id);
         //todo
         //下面一行必须存在，否则使用调用该方法时出错
-        LOGGER.info("load T:{}", t);
+        LOGGER.info("load {}", t);
         return t;
     }
 }

@@ -34,8 +34,8 @@
 </p>--%>
 
 <div>
-    <p>账号总数: </p>
-    <p>${totalAccountCount}</p>
+    <p>账号总数: ${totalAccountCount}</p>
+    <%--<p>${totalAccountCount}</p>--%>
 </div>
 
 <span>显示当前时间和日期:</span><br>

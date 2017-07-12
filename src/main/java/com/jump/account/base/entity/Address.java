@@ -1,11 +1,16 @@
 package com.jump.account.base.entity;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * Created by zhangp on 2017/7/11.
  */
 @Entity
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 @Table(name = "a_address")
 public class Address {
     @Id

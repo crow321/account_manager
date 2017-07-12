@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="baacee83-b962-4bf2-91b4-5a2004556cae" name="Default" comment="完善" />
-    <list default="true" id="3a927167-4804-4f9a-ba9c-c692fde62b2a" name="增加模糊查询接口" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/IAccountDao.class" afterPath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/IAccountDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/IBaseDao.class" afterPath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/IBaseDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/impl/AccountDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/impl/AccountDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/impl/BaseDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jump/account/base/dao/impl/BaseDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jump/account/base/entity/Account.class" afterPath="$PROJECT_DIR$/target/classes/com/jump/account/base/entity/Account.class" />
+    <list default="true" id="3a927167-4804-4f9a-ba9c-c692fde62b2a" name="增加模糊查询接口" comment="增加 hibernate 二级缓存配置">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__backport_util_concurrent_backport_util_concurrent_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountBaseServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountBaseServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account_manager.iml" afterPath="$PROJECT_DIR$/account_manager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/BaseDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/BaseDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Address.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Address.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/FormController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/FormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/account.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/account.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/form.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/form.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test/dao/AccountDaoImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/test/dao/AccountDaoImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/home.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,41 +41,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="AccountDaoImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/dao/AccountDaoImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="220">
+              <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/account-servlet.xml">
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/account.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="220">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,56 +63,684 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IAccountService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/service/IAccountService.java">
+      <file leaf-file-name="hibernate.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="242">
+              <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+              <folding>
+                <element signature="n#prop#5;n#props#0;n#property#2;n#bean#1;n#beans#0;n#!!top" expanded="true" />
+                <element signature="n#prop#6;n#props#0;n#property#2;n#bean#1;n#beans#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Address.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Address.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ehcache.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountBaseServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountBaseServiceImpl.java">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+            <state relative-caret-position="353">
+              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/BaseDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="748">
+              <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="MAVEN/com.jump:account:1.0-SNAPSHOT" pinned="false" current-in-tab="false">
+        <entry file="uml://MAVEN/com.jump:account:1.0-SNAPSHOT">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>MAVEN</ID>
+              <OriginalElement>com.jump:account:1.0-SNAPSHOT</OriginalElement>
+              <nodes>
+                <node x="0.0" y="1362.2658863240408">com.jump:account:1.0-SNAPSHOT</node>
+                <node x="260.5" y="626.743826219511">junit:junit:jar:4.12</node>
+                <node x="516.5" y="626.743826219511">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+                <node x="1662.0" y="1837.3652910859469">org.springframework:spring-core:jar:4.3.9.RELEASE</node>
+                <node x="1882.0" y="985.5270107433212">org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+                <node x="1433.0" y="1746.0979928861777">org.springframework:spring-beans:jar:4.3.9.RELEASE</node>
+                <node x="840.0" y="1910.8603440766544">org.springframework:spring-context:jar:4.3.9.RELEASE</node>
+                <node x="1190.5" y="1878.4853440766544">org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE</node>
+                <node x="1159.0" y="1954.4325529907073">org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE</node>
+                <node x="1437.5" y="2209.027010743321">org.springframework:spring-test:jar:4.3.9.RELEASE</node>
+                <node x="530.0" y="1797.5527910859469">org.springframework:spring-web:jar:4.3.9.RELEASE</node>
+                <node x="1190.5" y="2078.027010743321">org.springframework:spring-oxm:jar:4.3.9.RELEASE</node>
+                <node x="862.5" y="792.2499999999998">org.springframework:spring-tx:jar:4.3.9.RELEASE</node>
+                <node x="224.5" y="1910.59568452381">org.springframework:spring-webmvc:jar:4.3.9.RELEASE</node>
+                <node x="238.0" y="776.743826219511">org.springframework:spring-orm:jar:4.3.9.RELEASE</node>
+                <node x="525.5" y="764.2499999999998">org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE</node>
+                <node x="512.0" y="1109.2658863240408">org.hibernate:hibernate-core:jar:5.2.10.Final</node>
+                <node x="1177.0" y="988.3479928861777">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final</node>
+                <node x="862.5" y="1176.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.javassist:javassist:jar:3.20.0-GA</node>
+                <node x="768.0" y="1101.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final</node>
+                <node x="876.0" y="1251.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss:jandex:jar:2.0.3.Final</node>
+                <node x="862.5" y="1326.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/com.fasterxml:classmate:jar:1.3.0</node>
+                <node x="772.5" y="1026.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final</node>
+                <node x="206.5" y="859.2499999999998">org.hibernate:hibernate-ehcache:jar:5.2.10.Final</node>
+                <node x="808.5" y="895.9999999999998">org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
+                <node x="242.5" y="2106.027010743321">javassist:javassist:jar:3.12.1.GA</node>
+                <node x="880.5" y="970.9999999999998">antlr:antlr:jar:2.7.7</node>
+                <node x="880.5" y="1724.0527910859469">dom4j:dom4j:jar:1.6.1</node>
+                <node x="1199.5" y="1724.0527910859469">dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
+                <node x="534.5" y="1592.1777910859469">org.slf4j:slf4j-api:jar:1.7.25</node>
+                <node x="224.5" y="1554.6777910859469">org.slf4j:slf4j-log4j12:jar:1.7.25</node>
+                <node x="552.5" y="1517.1777910859469">log4j:log4j:jar:1.2.17</node>
+                <node x="251.5" y="262.6249999999998">net.sf.ehcache:ehcache:jar:2.10.4</node>
+                <node x="193.0" y="1835.59568452381">mysql:mysql-connector-java:jar:6.0.6</node>
+                <node x="233.5" y="1704.8027910859469">org.apache.tomcat:tomcat-jdbc:jar:8.5.15</node>
+                <node x="525.5" y="1704.8027910859469">org.apache.tomcat:tomcat-jdbc:jar:8.5.15/org.apache.tomcat:tomcat-juli:jar:8.5.15</node>
+                <node x="247.0" y="0.0">com.alibaba:fastjson:jar:1.2.32</node>
+                <node x="197.5" y="701.743826219511">com.fasterxml.jackson.core:jackson-annotations:jar:2.8.8</node>
+                <node x="521.0" y="1390.5527910859469">com.fasterxml.jackson.core:jackson-core:jar:2.8.8</node>
+                <node x="211.0" y="1404.5527910859469">com.fasterxml.jackson.core:jackson-databind:jar:2.8.8</node>
+                <node x="224.5" y="2050.027010743321">org.aspectj:aspectjweaver:jar:1.8.10</node>
+                <node x="242.5" y="1985.59568452381">org.aspectj:aspectjrt:jar:1.8.10</node>
+                <node x="233.5" y="187.62499999999977">javax.servlet:servlet-api:jar:2.5</node>
+                <node x="265.0" y="476.743826219511">javax.servlet:jstl:jar:1.2</node>
+                <node x="238.0" y="1760.8027910859469">commons-io:commons-io:jar:2.5</node>
+                <node x="202.0" y="551.743826219511">commons-fileupload:commons-fileupload:jar:1.3.2</node>
+                <node x="557.0" y="168.37499999999977">com.google.zxing:core:jar:3.3.0</node>
+                <node x="256.0" y="326.743826219511">com.google.zxing:javase:jar:3.3.0</node>
+                <node x="530.0" y="405.09568452380995">com.google.zxing:javase:jar:3.3.0/com.beust:jcommander:jar:1.48</node>
+                <node x="503.0" y="318.6249999999998">com.google.zxing:javase:jar:3.3.0/com.github.jai-imageio:jai-imageio-core:jar:1.3.1</node>
+                <node x="220.0" y="401.743826219511">org.bouncycastle:bcprov-jdk15on:jar:1.57</node>
+                <node x="251.5" y="1629.8027910859469">org.mybatis:mybatis:jar:3.4.4</node>
+                <node x="220.0" y="1479.5527910859469">org.mybatis:mybatis-spring:jar:1.3.1</node>
+                <node x="184.0" y="2181.027010743321">org.mybatis.generator:mybatis-generator-core:jar:1.3.5</node>
+                <node x="233.5" y="1240.1408863240408">org.springframework:spring-mock:jar:2.0.8</node>
+                <node x="224.5" y="924.7499999999998">com.google.protobuf:protobuf-java:jar:3.3.0</node>
+                <node x="242.5" y="74.99999999999977">org.apache.thrift:libthrift:jar:0.10.0</node>
+                <node x="530.0" y="93.37499999999977">org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1</node>
+                <node x="844.5" y="132.84568452380995">org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1/commons-codec:commons-codec:jar:1.9</node>
+                <node x="867.0" y="65.375">org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpcore:jar:4.4.1</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="javassist:javassist:jar:3.12.1.GA">
+                  <point x="52.0" y="15.365853658536707" />
+                  <point x="184.0" y="2123.527010743321" />
+                  <point x="-61.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpcore:jar:4.4.1">
+                  <point x="65.5" y="-11.666666666666742" />
+                  <point x="688.0" y="99.20833333333303" />
+                  <point x="768.0" y="91.625" />
+                  <point x="-56.5" y="8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="-12.804878048780438" />
+                  <point x="184.0" y="308.1249999999998" />
+                  <point x="1582.0" y="308.1249999999998" />
+                  <point x="-70.0" y="-16.041666666666742" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.aspectj:aspectjweaver:jar:1.8.10">
+                  <point x="52.0" y="13.658536585365937" />
+                  <point x="184.0" y="2067.527010743321" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="79.0" y="14.583333333333258" />
+                  <point x="423.0" y="1942.6790178571432" />
+                  <point x="503.0" y="1999.9325529907073" />
+                  <point x="1582.0" y="1999.9325529907073" />
+                  <point x="-70.0" y="10.208333333333258" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="97.0" y="-0.0" />
+                  <point x="1582.0" y="1971.9325529907073" />
+                  <point x="-70.0" y="7.2916666666667425" />
+                </edge>
+                <edge source="org.springframework:spring-test:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="70.0" y="-0.0" />
+                  <point x="-70.0" y="16.041666666666742" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="9.390243902439124" />
+                  <point x="184.0" y="1806.3027910859469" />
+                  <point x="-65.5" y="-8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.apache.thrift:libthrift:jar:0.10.0">
+                  <point x="52.0" y="-16.21951219512198" />
+                  <point x="184.0" y="92.49999999999977" />
+                  <point x="-61.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.google.zxing:core:jar:3.3.0">
+                  <point x="52.0" y="-15.365853658536594" />
+                  <point x="184.0" y="177.12499999999977" />
+                  <point x="-38.5" y="-8.75" />
+                </edge>
+                <edge source="dom4j:dom4j:jar:1.6.1" target="dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2">
+                  <point x="43.0" y="-0.0" />
+                  <point x="-56.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE">
+                  <point x="79.0" y="2.9166666666667425" />
+                  <point x="503.0" y="1928.3603440766544" />
+                  <point x="-83.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.hibernate:hibernate-ehcache:jar:5.2.10.Final">
+                  <point x="52.0" y="-5.121951219512198" />
+                  <point x="184.0" y="876.7499999999998" />
+                  <point x="-97.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.7.25">
+                  <point x="52.0" y="5.121951219512312" />
+                  <point x="184.0" y="1619.3027910859469" />
+                  <point x="-61.0" y="8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.mybatis:mybatis:jar:3.4.4">
+                  <point x="52.0" y="5.975609756097583" />
+                  <point x="184.0" y="1647.3027910859469" />
+                  <point x="-52.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="70.0" y="-11.666666666666742" />
+                  <point x="688.0" y="770.083333333333" />
+                  <point x="768.0" y="749.993826219511" />
+                  <point x="1582.0" y="749.993826219511" />
+                  <point x="-70.0" y="-10.208333333333258" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="mysql:mysql-connector-java:jar:6.0.6">
+                  <point x="52.0" y="10.243902439024396" />
+                  <point x="-110.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="antlr:antlr:jar:2.7.7">
+                  <point x="52.0" y="-2.560975609756042" />
+                  <point x="184.0" y="979.7499999999998" />
+                  <point x="-43.0" y="-8.75" />
+                </edge>
+                <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="79.0" y="-8.75" />
+                  <point x="423.0" y="1919.34568452381" />
+                  <point x="503.0" y="1850.318677409988" />
+                  <point x="1353.0" y="1850.318677409988" />
+                  <point x="-74.5" y="3.888888888888914" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.aspectj:aspectjrt:jar:1.8.10">
+                  <point x="52.0" y="11.951219512195166" />
+                  <point x="184.0" y="2003.09568452381" />
+                  <point x="-61.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-annotations:jar:2.8.8">
+                  <point x="52.0" y="-7.68292682926824" />
+                  <point x="184.0" y="719.243826219511" />
+                  <point x="-106.0" y="-0.0" />
+                </edge>
+                <edge source="org.hibernate:hibernate-ehcache:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+                  <point x="97.0" y="-8.75" />
+                  <point x="1079.0" y="867.9999999999998" />
+                  <point x="1159.0" y="994.181326219511" />
+                  <point x="-79.0" y="-11.666666666666629" />
+                </edge>
+                <edge source="org.apache.thrift:libthrift:jar:0.10.0" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpcore:jar:4.4.1">
+                  <point x="61.0" y="-8.75" />
+                  <point x="423.0" y="83.74999999999977" />
+                  <point x="503.0" y="74.125" />
+                  <point x="-56.5" y="-8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.google.protobuf:protobuf-java:jar:3.3.0">
+                  <point x="52.0" y="-3.4146341463414274" />
+                  <point x="184.0" y="942.2499999999998" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.mybatis.generator:mybatis-generator-core:jar:1.3.5">
+                  <point x="52.0" y="16.21951219512198" />
+                  <point x="-119.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-oxm:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="8.75" />
+                  <point x="1582.0" y="2104.277010743321" />
+                  <point x="-70.0" y="13.125" />
+                </edge>
+                <edge source="org.slf4j:slf4j-log4j12:jar:1.7.25" target="log4j:log4j:jar:1.2.17">
+                  <point x="79.0" y="-8.75" />
+                  <point x="423.0" y="1563.4277910859469" />
+                  <point x="503.0" y="1543.4277910859469" />
+                  <point x="-43.0" y="8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-orm:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="-6.829268292682968" />
+                  <point x="184.0" y="794.243826219511" />
+                  <point x="-65.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="83.5" y="4.375" />
+                  <point x="1582.0" y="1932.7353440766544" />
+                  <point x="-70.0" y="4.375" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.javassist:javassist:jar:3.20.0-GA">
+                  <point x="83.5" y="3.888888888888914" />
+                  <point x="768.0" y="1194.4999999999998" />
+                  <point x="-61.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="dom4j:dom4j:jar:1.6.1">
+                  <point x="52.0" y="7.682926829268354" />
+                  <point x="184.0" y="1750.3027910859469" />
+                  <point x="-43.0" y="8.75" />
+                </edge>
+                <edge source="org.springframework:spring-tx:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="61.0" y="-8.75" />
+                  <point x="1079.0" y="800.9999999999998" />
+                  <point x="1159.0" y="804.2499999999998" />
+                  <point x="1582.0" y="804.2499999999998" />
+                  <point x="-70.0" y="-7.2916666666667425" />
+                </edge>
+                <edge source="com.google.zxing:javase:jar:3.3.0" target="com.google.zxing:core:jar:3.3.0">
+                  <point x="47.5" y="-11.666666666666686" />
+                  <point x="423.0" y="332.57715955284425" />
+                  <point x="503.0" y="194.62499999999977" />
+                  <point x="-38.5" y="8.75" />
+                </edge>
+                <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="13.125" />
+                  <point x="688.0" y="1828.1777910859469" />
+                  <point x="768.0" y="1916.6936774099877" />
+                  <point x="-83.5" y="-11.666666666666742" />
+                </edge>
+                <edge source="com.google.zxing:javase:jar:3.3.0" target="com.google.zxing:javase:jar:3.3.0/com.github.jai-imageio:jai-imageio-core:jar:1.3.1">
+                  <point x="47.5" y="-0.0" />
+                  <point x="423.0" y="344.243826219511" />
+                  <point x="-92.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.bouncycastle:bcprov-jdk15on:jar:1.57">
+                  <point x="52.0" y="-11.097560975609781" />
+                  <point x="184.0" y="419.243826219511" />
+                  <point x="-83.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE" target="org.springframework:spring-tx:jar:4.3.9.RELEASE">
+                  <point x="70.0" y="11.666666666666742" />
+                  <point x="688.0" y="793.4166666666665" />
+                  <point x="768.0" y="798.083333333333" />
+                  <point x="-61.0" y="-11.666666666666742" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="-0.0" />
+                  <point x="1353.0" y="1380.0527910859469" />
+                  <point x="-74.5" y="-3.888888888888914" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="-4.375" />
+                  <point x="423.0" y="789.868826219511" />
+                  <point x="503.0" y="781.7499999999998" />
+                  <point x="-70.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-web:jar:4.3.9.RELEASE">
+                  <point x="79.0" y="-14.583333333333258" />
+                  <point x="423.0" y="1913.5123511904767" />
+                  <point x="503.0" y="1823.8027910859469" />
+                  <point x="-65.5" y="8.75" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final">
+                  <point x="83.5" y="-0.0" />
+                  <point x="-155.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="commons-fileupload:commons-fileupload:jar:1.3.2">
+                  <point x="52.0" y="-9.39024390243901" />
+                  <point x="184.0" y="569.243826219511" />
+                  <point x="-101.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.7.25">
+                  <point x="52.0" y="4.268292682926813" />
+                  <point x="184.0" y="1572.1777910859469" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.apache.tomcat:tomcat-jdbc:jar:8.5.15">
+                  <point x="52.0" y="6.829268292682855" />
+                  <point x="184.0" y="1722.3027910859469" />
+                  <point x="-70.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-webmvc:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="11.097560975609667" />
+                  <point x="184.0" y="1928.09568452381" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-mock:jar:2.0.8">
+                  <point x="52.0" y="-0.8536585365853853" />
+                  <point x="184.0" y="1257.6408863240408" />
+                  <point x="-70.0" y="-0.0" />
+                </edge>
+                <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+                  <point x="43.0" y="-0.0" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="org.slf4j:slf4j-log4j12:jar:1.7.25" target="org.slf4j:slf4j-api:jar:1.7.25">
+                  <point x="79.0" y="8.75" />
+                  <point x="423.0" y="1580.9277910859469" />
+                  <point x="503.0" y="1600.9277910859469" />
+                  <point x="-61.0" y="-8.75" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE">
+                  <point x="83.5" y="-13.125" />
+                  <point x="1079.0" y="1915.2353440766544" />
+                  <point x="1159.0" y="1907.6520107433212" />
+                  <point x="-65.5" y="11.666666666666742" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.google.zxing:javase:jar:3.3.0">
+                  <point x="52.0" y="-11.951219512195166" />
+                  <point x="184.0" y="344.243826219511" />
+                  <point x="-47.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE">
+                  <point x="79.0" y="8.75" />
+                  <point x="423.0" y="1936.84568452381" />
+                  <point x="503.0" y="1980.6825529907073" />
+                  <point x="-97.0" y="8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+                  <point x="52.0" y="-8.536585365853625" />
+                  <point x="184.0" y="644.243826219511" />
+                  <point x="-43.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="13.125" />
+                  <point x="423.0" y="807.368826219511" />
+                  <point x="503.0" y="837.7499999999998" />
+                  <point x="1353.0" y="837.7499999999998" />
+                  <point x="-74.5" y="-7.777777777777828" />
+                </edge>
+                <edge source="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8" target="com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+                  <point x="92.5" y="-0.0" />
+                  <point x="423.0" y="1422.0527910859469" />
+                  <point x="-74.5" y="8.75" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="-13.125" />
+                  <point x="423.0" y="781.118826219511" />
+                  <point x="503.0" y="732.993826219511" />
+                  <point x="1582.0" y="732.993826219511" />
+                  <point x="-70.0" y="-13.125" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+                  <point x="83.5" y="-15.555555555555543" />
+                  <point x="768.0" y="922.2499999999998" />
+                  <point x="-115.0" y="8.75" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+                  <point x="83.5" y="-7.777777777777828" />
+                  <point x="768.0" y="1016.4999999999998" />
+                  <point x="1079.0" y="1016.4999999999998" />
+                  <point x="1159.0" y="1005.8479928861777" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.thrift:libthrift:jar:0.10.0" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1">
+                  <point x="61.0" y="8.75" />
+                  <point x="423.0" y="101.24999999999977" />
+                  <point x="503.0" y="110.87499999999977" />
+                  <point x="-65.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-tx:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="4.375" />
+                  <point x="423.0" y="798.618826219511" />
+                  <point x="503.0" y="809.7499999999998" />
+                  <point x="-61.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="8.75" />
+                  <point x="1582.0" y="1904.7353440766544" />
+                  <point x="-70.0" y="1.4583333333332575" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+                  <point x="52.0" y="0.8536585365853853" />
+                  <point x="184.0" y="1394.0527910859469" />
+                  <point x="423.0" y="1394.0527910859469" />
+                  <point x="-74.5" y="-8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.mybatis:mybatis-spring:jar:1.3.1">
+                  <point x="52.0" y="2.560975609756156" />
+                  <point x="184.0" y="1497.0527910859469" />
+                  <point x="-83.5" y="-0.0" />
+                </edge>
+                <edge source="org.hibernate:hibernate-ehcache:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final">
+                  <point x="97.0" y="8.75" />
+                  <point x="423.0" y="885.4999999999998" />
+                  <point x="-83.5" y="-8.75" />
+                </edge>
+                <edge source="org.springframework:spring-beans:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="74.5" y="-0.0" />
+                  <point x="-70.0" y="-4.375" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE">
+                  <point x="83.5" y="13.125" />
+                  <point x="1079.0" y="1941.4853440766544" />
+                  <point x="-97.0" y="-8.75" />
+                </edge>
+                <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="-13.125" />
+                  <point x="688.0" y="1801.9277910859469" />
+                  <point x="768.0" y="1783.381177409988" />
+                  <point x="1353.0" y="1783.381177409988" />
+                  <point x="-74.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.32">
+                  <point x="52.0" y="-17.073170731707364" />
+                  <point x="184.0" y="17.5" />
+                  <point x="-56.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-oxm:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="14.512195121951208" />
+                  <point x="184.0" y="2095.527010743321" />
+                  <point x="-65.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8">
+                  <point x="52.0" y="1.7073170731707705" />
+                  <point x="184.0" y="1422.0527910859469" />
+                  <point x="-92.5" y="-0.0" />
+                </edge>
+                <edge source="org.apache.tomcat:tomcat-jdbc:jar:8.5.15" target="org.apache.tomcat:tomcat-jdbc:jar:8.5.15/org.apache.tomcat:tomcat-juli:jar:8.5.15">
+                  <point x="70.0" y="-0.0" />
+                  <point x="-70.0" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-core:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2">
+                  <point x="70.0" y="-0.0" />
+                  <point x="-88.0" y="8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="javax.servlet:servlet-api:jar:2.5">
+                  <point x="52.0" y="-14.512195121951208" />
+                  <point x="184.0" y="205.12499999999977" />
+                  <point x="-70.0" y="-0.0" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="dom4j:dom4j:jar:1.6.1">
+                  <point x="83.5" y="15.555555555555657" />
+                  <point x="768.0" y="1732.8027910859469" />
+                  <point x="-43.0" y="-8.75" />
+                </edge>
+                <edge source="com.google.zxing:javase:jar:3.3.0" target="com.google.zxing:javase:jar:3.3.0/com.beust:jcommander:jar:1.48">
+                  <point x="47.5" y="11.666666666666686" />
+                  <point x="423.0" y="355.91049288617774" />
+                  <point x="503.0" y="422.59568452380995" />
+                  <point x="-65.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:5.2.10.Final">
+                  <point x="52.0" y="-1.7073170731707705" />
+                  <point x="184.0" y="1135.5158863240408" />
+                  <point x="-83.5" y="8.75" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="83.5" y="-4.375" />
+                  <point x="1353.0" y="1923.9853440766544" />
+                  <point x="-74.5" y="11.666666666666742" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+                  <point x="151.0" y="-0.0" />
+                  <point x="1159.0" y="1017.5146595528445" />
+                  <point x="-79.0" y="11.666666666666742" />
+                </edge>
+                <edge source="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1/commons-codec:commons-codec:jar:1.9">
+                  <point x="65.5" y="11.666666666666742" />
+                  <point x="688.0" y="122.54166666666652" />
+                  <point x="768.0" y="150.34568452380995" />
+                  <point x="-79.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="javax.servlet:jstl:jar:1.2">
+                  <point x="52.0" y="-10.243902439024396" />
+                  <point x="184.0" y="494.243826219511" />
+                  <point x="-38.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-tx:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="61.0" y="8.75" />
+                  <point x="1079.0" y="818.4999999999998" />
+                  <point x="1159.0" y="815.2499999999998" />
+                  <point x="1353.0" y="815.2499999999998" />
+                  <point x="-74.5" y="-11.666666666666742" />
+                </edge>
+                <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="70.0" y="-0.0" />
+                  <point x="1353.0" y="781.4166666666663" />
+                  <point x="-74.5" y="-15.555555555555657" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="commons-io:commons-io:jar:2.5">
+                  <point x="52.0" y="8.536585365853625" />
+                  <point x="184.0" y="1778.3027910859469" />
+                  <point x="-65.5" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+                  <point x="52.0" y="-4.268292682926813" />
+                  <point x="184.0" y="904.7499999999998" />
+                  <point x="-115.0" y="-8.75" />
+                </edge>
+                <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="-4.375" />
+                  <point x="688.0" y="1810.6777910859469" />
+                  <point x="768.0" y="1817.943677409988" />
+                  <point x="1582.0" y="1817.943677409988" />
+                  <point x="-70.0" y="-1.4583333333332575" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final">
+                  <point x="83.5" y="-3.888888888888914" />
+                  <point x="-151.0" y="-0.0" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/com.fasterxml:classmate:jar:1.3.0">
+                  <point x="83.5" y="11.666666666666742" />
+                  <point x="768.0" y="1344.4999999999998" />
+                  <point x="-61.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="log4j:log4j:jar:1.2.17">
+                  <point x="52.0" y="3.4146341463414274" />
+                  <point x="184.0" y="1525.0527910859469" />
+                  <point x="-43.0" y="-8.75" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-test:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="17.07317073170725" />
+                  <point x="184.0" y="2226.527010743321" />
+                  <point x="-70.0" y="-0.0" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-tx:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="-5.975609756097583" />
+                  <point x="184.0" y="848.7499999999998" />
+                  <point x="688.0" y="848.7499999999998" />
+                  <point x="768.0" y="821.4166666666665" />
+                  <point x="-61.0" y="11.666666666666742" />
+                </edge>
+                <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="4.375" />
+                  <point x="688.0" y="1819.4277910859469" />
+                  <point x="768.0" y="1826.693677409988" />
+                  <point x="1079.0" y="1826.693677409988" />
+                  <point x="1159.0" y="1884.3186774099877" />
+                  <point x="-65.5" y="-11.666666666666742" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-context:jar:4.3.9.RELEASE">
+                  <point x="52.0" y="12.804878048780438" />
+                  <point x="184.0" y="2039.5270107433212" />
+                  <point x="688.0" y="2039.5270107433212" />
+                  <point x="768.0" y="1940.0270107433212" />
+                  <point x="-83.5" y="11.666666666666742" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss:jandex:jar:2.0.3.Final">
+                  <point x="83.5" y="7.777777777777828" />
+                  <point x="768.0" y="1269.4999999999998" />
+                  <point x="-47.5" y="-0.0" />
+                </edge>
+                <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="-8.75" />
+                  <point x="1353.0" y="1887.2353440766544" />
+                  <point x="-74.5" y="7.777777777777828" />
+                </edge>
+                <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE">
+                  <point x="79.0" y="-2.9166666666667425" />
+                  <point x="423.0" y="1925.1790178571432" />
+                  <point x="503.0" y="1895.9853440766544" />
+                  <point x="-65.5" y="-0.0" />
+                </edge>
+                <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="antlr:antlr:jar:2.7.7">
+                  <point x="83.5" y="-11.666666666666629" />
+                  <point x="768.0" y="997.2499999999998" />
+                  <point x="-43.0" y="8.75" />
+                </edge>
+                <edge source="org.springframework:spring-oxm:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+                  <point x="65.5" y="-8.75" />
+                  <point x="1353.0" y="2086.777010743321" />
+                  <point x="-74.5" y="15.555555555555657" />
+                </edge>
+                <edge source="com.jump:account:1.0-SNAPSHOT" target="net.sf.ehcache:ehcache:jar:2.10.4">
+                  <point x="52.0" y="-13.658536585365823" />
+                  <point x="184.0" y="280.1249999999998" />
+                  <point x="-52.0" y="-0.0" />
+                </edge>
+                <edge source="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1" target="org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2">
+                  <point x="65.5" y="-0.0" />
+                  <point x="1802.0" y="110.87499999999977" />
+                  <point x="-88.0" y="-8.75" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8889624724061811" x="396.97765085671716" y="1073.9776508567172" />
+              <SelectedNodes>
+                <node>org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1</node>
+              </SelectedNodes>
+              <Categories />
+              <VISIBILITY>All</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/FormController.java">
+      <file leaf-file-name="TAccountServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/thrift/impl/TAccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1568">
+              <caret line="90" column="32" lean-forward="false" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="103" column="39" lean-forward="false" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,10 +752,10 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Tag Library Descriptor" />
-        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -162,6 +769,15 @@
       <find>receive account</find>
       <find>password:</find>
       <find>tx</find>
+      <find>Receive getOneByName, name:testqq9</find>
+      <find>Receive getOneByName, name:testqq</find>
+      <find>5409347823270678788diskstore</find>
+      <find>ehcache_auto_created1017290758532454926diskstore</find>
+      <find>eceive loadById, id:</find>
+      <find>Receive getOneByName</find>
+      <find>Receive loadById, id</find>
+      <find>耗时：</find>
+      <find>),耗时：</find>
     </findStrings>
     <replaceStrings>
       <replace>debug</replace>
@@ -181,21 +797,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/vo/Page.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/util/PageUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/dao/AccountServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/Junit4BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/dao/IAccountDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/IAccountDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/la.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/dao/BaseDaoImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/AccountDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/dao/AccountDaoImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/util/ConvertUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/security/impl/SecurityImplByAES128.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/service/AccountServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/BaseDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/service/IAccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/IBaseDao.java" />
@@ -216,8 +826,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/BootStrap.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/thrift/server/AccountServerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/security/impl/SecurityImplForAES128.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/util/ProtoBufUtil.java" />
@@ -227,13 +835,34 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountBaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/main.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/form.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/home.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/account.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/FormController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/BaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/dao/AccountDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
       </list>
     </option>
+  </component>
+  <component name="IntelliJConfiguration">
+    <option name="PROPERTY_FILES">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="REMOVE_NBSP" value="true" />
+    <option name="CREATE_NEW_JSP" value="true" />
+    <option name="KEY_RESOLUTION_TYPE" value="Use all words in label" />
+    <option name="PROMPT_FOR_KEY_PREFIX" value="false" />
+    <option name="LABEL_PART_1" value="&lt;bean:message key=&quot;" />
+    <option name="LABEL_PART_2" value="&quot;/&gt;" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -321,7 +950,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,6 +1015,48 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -403,6 +1073,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,6 +1256,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -595,6 +1367,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -672,8 +1478,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -730,59 +1537,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration default="false" name="AccountBaseServiceImplTest.getAccountByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="account_manager" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.service" />
-      <option name="MAIN_CLASS_NAME" value="test.service.AccountBaseServiceImplTest" />
-      <option name="METHOD_NAME" value="getAccountByName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="AccountBaseServiceImplTest.getPasswordByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="account_manager" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.service" />
-      <option name="MAIN_CLASS_NAME" value="test.service.AccountBaseServiceImplTest" />
-      <option name="METHOD_NAME" value="getPasswordByUserName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.AccountDaoImplTest.insert">
     <configuration default="false" name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -791,26 +1546,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.jump.account.BootStrap" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="account_manager" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="AccountServerImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jump.account.base.thrift.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jump.account.base.thrift.server.AccountServerImpl" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -841,6 +1576,84 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="account_manager" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AccountDaoImplTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="account_manager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.dao" />
+      <option name="MAIN_CLASS_NAME" value="test.dao.AccountDaoImplTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AccountDaoImplTest.getOneByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="account_manager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.dao" />
+      <option name="MAIN_CLASS_NAME" value="test.dao.AccountDaoImplTest" />
+      <option name="METHOD_NAME" value="getOneByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AccountDaoImplTest.loadById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="account_manager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.dao" />
+      <option name="MAIN_CLASS_NAME" value="test.dao.AccountDaoImplTest" />
+      <option name="METHOD_NAME" value="loadById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1265,6 +2078,7 @@
     </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.14" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Xms512m -Xmx512m -XX:+PrintGCDetails " />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="account_manager:war exploded">
           <settings>
@@ -1337,19 +2151,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountBaseServiceImplTest.getAccountByName" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AccountBaseServiceImplTest.getPasswordByUserName" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BootStrap" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AccountServerImpl" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Client" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BootStrap" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Client" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountDaoImplTest.insert" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AccountDaoImplTest.getOneByName" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AccountDaoImplTest.loadById" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Client" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BootStrap" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AccountServerImpl" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AccountBaseServiceImplTest.getPasswordByUserName" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AccountBaseServiceImplTest.getAccountByName" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AccountDaoImplTest.insert" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountDaoImplTest.getOneByName" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AccountDaoImplTest.loadById" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Client" />
+        <item index="4" class="java.lang.String" itemvalue="Application.BootStrap" />
       </list>
     </recent_temporary>
   </component>
@@ -1380,6 +2194,7 @@
       <workItem from="1499396467750" duration="15133000" />
       <workItem from="1499647352784" duration="619000" />
       <workItem from="1499648389141" duration="1109000" />
+      <workItem from="1499776700431" duration="10581000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;tx:annotation-driven/&gt;使用注解时，事务未提交，导致插入数据失败，原因未知。">
       <created>1498131823803</created>
@@ -1469,39 +2284,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountServiceImplTest_getAccountByName - 2017.07.04 at 10h 02m 50s.xml">
-      <configuration name="AccountServiceImplTest.getAccountByName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 32m 31s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getAccountByName - 2017.07.04 at 10h 03m 08s.xml">
-      <configuration name="AccountServiceImplTest.getAccountByName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 33m 07s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getAccountByName - 2017.07.04 at 10h 03m 27s.xml">
-      <configuration name="AccountServiceImplTest.getAccountByName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 34m 00s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 19m 50s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 36m 39s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 21m 57s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 38m 12s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 21m 59s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 39m 04s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 23m 00s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 51m 27s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 23m 41s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 54m 57s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 23m 42s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 55m 16s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountServiceImplTest_getPasswordByUserName - 2017.07.04 at 10h 24m 33s.xml">
-      <configuration name="AccountServiceImplTest.getPasswordByUserName" configurationId="JUnit" />
+    <history-entry file="AccountDaoImplTest_insert - 2017.07.12 at 13h 55m 51s.xml">
+      <configuration name="AccountDaoImplTest.insert" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124856000" />
+    <option name="totallyTimeSpent" value="135437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1526,21 +2341,22 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253212" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25642398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3131635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55414015" sideWeight="0.496788" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55626327" sideWeight="0.496788" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.49785867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26605996" sideWeight="0.5173675" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27301928" sideWeight="0.48263255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27301928" sideWeight="0.48263255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25642398" sideWeight="0.5084746" order="7" side_tool="true" content_ui="tabs" />
@@ -1548,7 +2364,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1596,7 +2411,8 @@
     <MESSAGE value="排除冲突的依赖包" />
     <MESSAGE value="添加Thrift服务端" />
     <MESSAGE value="web开发环境完成。&#10;1）之前未配置WEB需要的相关jar包，导致tomcat启动后页面出现404错误！" />
-    <option name="LAST_COMMIT_MESSAGE" value="web开发环境完成。&#10;1）之前未配置WEB需要的相关jar包，导致tomcat启动后页面出现404错误！" />
+    <MESSAGE value="增加 hibernate 二级缓存配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加 hibernate 二级缓存配置" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1611,96 +2427,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/account-servlet.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/views/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/IBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ad.tld" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com.jump:account:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.jump:account:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.jump:account:1.0-SNAPSHOT</node>
-            <node x="" y="">junit:junit:jar:4.12</node>
-            <node x="" y="">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.springframework:spring-core:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2</node>
-            <node x="" y="">org.springframework:spring-beans:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-test:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-web:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-oxm:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-tx:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-orm:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final/org.javassist:javassist:jar:3.20.0-GA</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss:jandex:jar:2.0.3.Final</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final/com.fasterxml:classmate:jar:1.3.0</node>
-            <node x="" y="">org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final</node>
-            <node x="" y="">org.hibernate:hibernate-ehcache:jar:5.2.10.Final</node>
-            <node x="" y="">org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
-            <node x="" y="">javassist:javassist:jar:3.12.1.GA</node>
-            <node x="" y="">antlr:antlr:jar:2.7.7</node>
-            <node x="" y="">dom4j:dom4j:jar:1.6.1</node>
-            <node x="" y="">dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
-            <node x="" y="">org.slf4j:slf4j-api:jar:1.7.25</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.25</node>
-            <node x="" y="">log4j:log4j:jar:1.2.17</node>
-            <node x="" y="">net.sf.ehcache:ehcache:jar:2.10.4</node>
-            <node x="" y="">mysql:mysql-connector-java:jar:6.0.6</node>
-            <node x="" y="">org.apache.tomcat:tomcat-jdbc:jar:8.5.15</node>
-            <node x="" y="">org.apache.tomcat:tomcat-jdbc:jar:8.5.15/org.apache.tomcat:tomcat-juli:jar:8.5.15</node>
-            <node x="" y="">com.alibaba:fastjson:jar:1.2.32</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-annotations:jar:2.8.8</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-core:jar:2.8.8</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.8.8</node>
-            <node x="" y="">org.aspectj:aspectjweaver:jar:1.8.10</node>
-            <node x="" y="">org.aspectj:aspectjrt:jar:1.8.10</node>
-            <node x="" y="">javax.servlet:servlet-api:jar:2.5</node>
-            <node x="" y="">javax.servlet:jstl:jar:1.2</node>
-            <node x="" y="">commons-io:commons-io:jar:2.5</node>
-            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.3.2</node>
-            <node x="" y="">com.google.zxing:core:jar:3.3.0</node>
-            <node x="" y="">com.google.zxing:javase:jar:3.3.0</node>
-            <node x="" y="">com.google.zxing:javase:jar:3.3.0/com.beust:jcommander:jar:1.48</node>
-            <node x="" y="">com.google.zxing:javase:jar:3.3.0/com.github.jai-imageio:jai-imageio-core:jar:1.3.1</node>
-            <node x="" y="">org.bouncycastle:bcprov-jdk15on:jar:1.57</node>
-            <node x="" y="">org.mybatis:mybatis:jar:3.4.4</node>
-            <node x="" y="">org.mybatis:mybatis-spring:jar:1.3.1</node>
-            <node x="" y="">org.mybatis.generator:mybatis-generator-core:jar:1.3.5</node>
-            <node x="" y="">org.springframework:spring-mock:jar:2.0.8</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8" x="644.0" y="134.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account_manager.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1743,13 +2469,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1950,14 +2669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="144" column="21" lean-forward="true" selection-start-line="139" selection-start-column="8" selection-end-line="144" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1984,14 +2695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2065,13 +2768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/thrift/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/thrift/impl/AccountServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -2092,14 +2789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2127,23 +2816,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/FormController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2151,6 +2828,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountBaseServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/account_delete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/web/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="132" column="33" lean-forward="false" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2159,25 +2861,693 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/service/IAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/service/impl/AccountBaseServiceImpl.java">
+    <entry file="uml://MAVEN/com.jump:account:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.jump:account:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="0.0" y="1362.2658863240408">com.jump:account:1.0-SNAPSHOT</node>
+            <node x="260.5" y="626.743826219511">junit:junit:jar:4.12</node>
+            <node x="516.5" y="626.743826219511">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="1662.0" y="1837.3652910859469">org.springframework:spring-core:jar:4.3.9.RELEASE</node>
+            <node x="1882.0" y="985.5270107433212">org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="1433.0" y="1746.0979928861777">org.springframework:spring-beans:jar:4.3.9.RELEASE</node>
+            <node x="840.0" y="1910.8603440766544">org.springframework:spring-context:jar:4.3.9.RELEASE</node>
+            <node x="1190.5" y="1878.4853440766544">org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE</node>
+            <node x="1159.0" y="1954.4325529907073">org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE</node>
+            <node x="1437.5" y="2209.027010743321">org.springframework:spring-test:jar:4.3.9.RELEASE</node>
+            <node x="530.0" y="1797.5527910859469">org.springframework:spring-web:jar:4.3.9.RELEASE</node>
+            <node x="1190.5" y="2078.027010743321">org.springframework:spring-oxm:jar:4.3.9.RELEASE</node>
+            <node x="862.5" y="792.2499999999998">org.springframework:spring-tx:jar:4.3.9.RELEASE</node>
+            <node x="224.5" y="1910.59568452381">org.springframework:spring-webmvc:jar:4.3.9.RELEASE</node>
+            <node x="238.0" y="776.743826219511">org.springframework:spring-orm:jar:4.3.9.RELEASE</node>
+            <node x="525.5" y="764.2499999999998">org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE</node>
+            <node x="512.0" y="1109.2658863240408">org.hibernate:hibernate-core:jar:5.2.10.Final</node>
+            <node x="1177.0" y="988.3479928861777">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final</node>
+            <node x="862.5" y="1176.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.javassist:javassist:jar:3.20.0-GA</node>
+            <node x="768.0" y="1101.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final</node>
+            <node x="876.0" y="1251.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss:jandex:jar:2.0.3.Final</node>
+            <node x="862.5" y="1326.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/com.fasterxml:classmate:jar:1.3.0</node>
+            <node x="772.5" y="1026.9999999999998">org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final</node>
+            <node x="206.5" y="859.2499999999998">org.hibernate:hibernate-ehcache:jar:5.2.10.Final</node>
+            <node x="808.5" y="895.9999999999998">org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
+            <node x="242.5" y="2106.027010743321">javassist:javassist:jar:3.12.1.GA</node>
+            <node x="880.5" y="970.9999999999998">antlr:antlr:jar:2.7.7</node>
+            <node x="880.5" y="1724.0527910859469">dom4j:dom4j:jar:1.6.1</node>
+            <node x="1199.5" y="1724.0527910859469">dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
+            <node x="534.5" y="1592.1777910859469">org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="224.5" y="1554.6777910859469">org.slf4j:slf4j-log4j12:jar:1.7.25</node>
+            <node x="552.5" y="1517.1777910859469">log4j:log4j:jar:1.2.17</node>
+            <node x="251.5" y="262.6249999999998">net.sf.ehcache:ehcache:jar:2.10.4</node>
+            <node x="193.0" y="1835.59568452381">mysql:mysql-connector-java:jar:6.0.6</node>
+            <node x="233.5" y="1704.8027910859469">org.apache.tomcat:tomcat-jdbc:jar:8.5.15</node>
+            <node x="525.5" y="1704.8027910859469">org.apache.tomcat:tomcat-jdbc:jar:8.5.15/org.apache.tomcat:tomcat-juli:jar:8.5.15</node>
+            <node x="247.0" y="0.0">com.alibaba:fastjson:jar:1.2.32</node>
+            <node x="197.5" y="701.743826219511">com.fasterxml.jackson.core:jackson-annotations:jar:2.8.8</node>
+            <node x="521.0" y="1390.5527910859469">com.fasterxml.jackson.core:jackson-core:jar:2.8.8</node>
+            <node x="211.0" y="1404.5527910859469">com.fasterxml.jackson.core:jackson-databind:jar:2.8.8</node>
+            <node x="224.5" y="2050.027010743321">org.aspectj:aspectjweaver:jar:1.8.10</node>
+            <node x="242.5" y="1985.59568452381">org.aspectj:aspectjrt:jar:1.8.10</node>
+            <node x="233.5" y="187.62499999999977">javax.servlet:servlet-api:jar:2.5</node>
+            <node x="265.0" y="476.743826219511">javax.servlet:jstl:jar:1.2</node>
+            <node x="238.0" y="1760.8027910859469">commons-io:commons-io:jar:2.5</node>
+            <node x="202.0" y="551.743826219511">commons-fileupload:commons-fileupload:jar:1.3.2</node>
+            <node x="557.0" y="168.37499999999977">com.google.zxing:core:jar:3.3.0</node>
+            <node x="256.0" y="326.743826219511">com.google.zxing:javase:jar:3.3.0</node>
+            <node x="530.0" y="405.09568452380995">com.google.zxing:javase:jar:3.3.0/com.beust:jcommander:jar:1.48</node>
+            <node x="503.0" y="318.6249999999998">com.google.zxing:javase:jar:3.3.0/com.github.jai-imageio:jai-imageio-core:jar:1.3.1</node>
+            <node x="220.0" y="401.743826219511">org.bouncycastle:bcprov-jdk15on:jar:1.57</node>
+            <node x="251.5" y="1629.8027910859469">org.mybatis:mybatis:jar:3.4.4</node>
+            <node x="220.0" y="1479.5527910859469">org.mybatis:mybatis-spring:jar:1.3.1</node>
+            <node x="184.0" y="2181.027010743321">org.mybatis.generator:mybatis-generator-core:jar:1.3.5</node>
+            <node x="233.5" y="1240.1408863240408">org.springframework:spring-mock:jar:2.0.8</node>
+            <node x="224.5" y="924.7499999999998">com.google.protobuf:protobuf-java:jar:3.3.0</node>
+            <node x="242.5" y="74.99999999999977">org.apache.thrift:libthrift:jar:0.10.0</node>
+            <node x="530.0" y="93.37499999999977">org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1</node>
+            <node x="844.5" y="132.84568452380995">org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1/commons-codec:commons-codec:jar:1.9</node>
+            <node x="867.0" y="65.375">org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpcore:jar:4.4.1</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="javassist:javassist:jar:3.12.1.GA">
+              <point x="52.0" y="15.365853658536707" />
+              <point x="184.0" y="2123.527010743321" />
+              <point x="-61.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpcore:jar:4.4.1">
+              <point x="65.5" y="-11.666666666666742" />
+              <point x="688.0" y="99.20833333333303" />
+              <point x="768.0" y="91.625" />
+              <point x="-56.5" y="8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="52.0" y="-12.804878048780438" />
+              <point x="184.0" y="308.1249999999998" />
+              <point x="1582.0" y="308.1249999999998" />
+              <point x="-70.0" y="-16.041666666666742" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.aspectj:aspectjweaver:jar:1.8.10">
+              <point x="52.0" y="13.658536585365937" />
+              <point x="184.0" y="2067.527010743321" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="79.0" y="14.583333333333258" />
+              <point x="423.0" y="1942.6790178571432" />
+              <point x="503.0" y="1999.9325529907073" />
+              <point x="1582.0" y="1999.9325529907073" />
+              <point x="-70.0" y="10.208333333333258" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="97.0" y="-0.0" />
+              <point x="1582.0" y="1971.9325529907073" />
+              <point x="-70.0" y="7.2916666666667425" />
+            </edge>
+            <edge source="org.springframework:spring-test:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="70.0" y="-0.0" />
+              <point x="-70.0" y="16.041666666666742" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:4.3.9.RELEASE">
+              <point x="52.0" y="9.390243902439124" />
+              <point x="184.0" y="1806.3027910859469" />
+              <point x="-65.5" y="-8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.apache.thrift:libthrift:jar:0.10.0">
+              <point x="52.0" y="-16.21951219512198" />
+              <point x="184.0" y="92.49999999999977" />
+              <point x="-61.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.google.zxing:core:jar:3.3.0">
+              <point x="52.0" y="-15.365853658536594" />
+              <point x="184.0" y="177.12499999999977" />
+              <point x="-38.5" y="-8.75" />
+            </edge>
+            <edge source="dom4j:dom4j:jar:1.6.1" target="dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2">
+              <point x="43.0" y="-0.0" />
+              <point x="-56.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE">
+              <point x="79.0" y="2.9166666666667425" />
+              <point x="503.0" y="1928.3603440766544" />
+              <point x="-83.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.hibernate:hibernate-ehcache:jar:5.2.10.Final">
+              <point x="52.0" y="-5.121951219512198" />
+              <point x="184.0" y="876.7499999999998" />
+              <point x="-97.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="52.0" y="5.121951219512312" />
+              <point x="184.0" y="1619.3027910859469" />
+              <point x="-61.0" y="8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.mybatis:mybatis:jar:3.4.4">
+              <point x="52.0" y="5.975609756097583" />
+              <point x="184.0" y="1647.3027910859469" />
+              <point x="-52.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="70.0" y="-11.666666666666742" />
+              <point x="688.0" y="770.083333333333" />
+              <point x="768.0" y="749.993826219511" />
+              <point x="1582.0" y="749.993826219511" />
+              <point x="-70.0" y="-10.208333333333258" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="mysql:mysql-connector-java:jar:6.0.6">
+              <point x="52.0" y="10.243902439024396" />
+              <point x="-110.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="antlr:antlr:jar:2.7.7">
+              <point x="52.0" y="-2.560975609756042" />
+              <point x="184.0" y="979.7499999999998" />
+              <point x="-43.0" y="-8.75" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="79.0" y="-8.75" />
+              <point x="423.0" y="1919.34568452381" />
+              <point x="503.0" y="1850.318677409988" />
+              <point x="1353.0" y="1850.318677409988" />
+              <point x="-74.5" y="3.888888888888914" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.aspectj:aspectjrt:jar:1.8.10">
+              <point x="52.0" y="11.951219512195166" />
+              <point x="184.0" y="2003.09568452381" />
+              <point x="-61.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-annotations:jar:2.8.8">
+              <point x="52.0" y="-7.68292682926824" />
+              <point x="184.0" y="719.243826219511" />
+              <point x="-106.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-ehcache:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="97.0" y="-8.75" />
+              <point x="1079.0" y="867.9999999999998" />
+              <point x="1159.0" y="994.181326219511" />
+              <point x="-79.0" y="-11.666666666666629" />
+            </edge>
+            <edge source="org.apache.thrift:libthrift:jar:0.10.0" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpcore:jar:4.4.1">
+              <point x="61.0" y="-8.75" />
+              <point x="423.0" y="83.74999999999977" />
+              <point x="503.0" y="74.125" />
+              <point x="-56.5" y="-8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.google.protobuf:protobuf-java:jar:3.3.0">
+              <point x="52.0" y="-3.4146341463414274" />
+              <point x="184.0" y="942.2499999999998" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.mybatis.generator:mybatis-generator-core:jar:1.3.5">
+              <point x="52.0" y="16.21951219512198" />
+              <point x="-119.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-oxm:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="65.5" y="8.75" />
+              <point x="1582.0" y="2104.277010743321" />
+              <point x="-70.0" y="13.125" />
+            </edge>
+            <edge source="org.slf4j:slf4j-log4j12:jar:1.7.25" target="log4j:log4j:jar:1.2.17">
+              <point x="79.0" y="-8.75" />
+              <point x="423.0" y="1563.4277910859469" />
+              <point x="503.0" y="1543.4277910859469" />
+              <point x="-43.0" y="8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-orm:jar:4.3.9.RELEASE">
+              <point x="52.0" y="-6.829268292682968" />
+              <point x="184.0" y="794.243826219511" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="83.5" y="4.375" />
+              <point x="1582.0" y="1932.7353440766544" />
+              <point x="-70.0" y="4.375" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.javassist:javassist:jar:3.20.0-GA">
+              <point x="83.5" y="3.888888888888914" />
+              <point x="768.0" y="1194.4999999999998" />
+              <point x="-61.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="dom4j:dom4j:jar:1.6.1">
+              <point x="52.0" y="7.682926829268354" />
+              <point x="184.0" y="1750.3027910859469" />
+              <point x="-43.0" y="8.75" />
+            </edge>
+            <edge source="org.springframework:spring-tx:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="61.0" y="-8.75" />
+              <point x="1079.0" y="800.9999999999998" />
+              <point x="1159.0" y="804.2499999999998" />
+              <point x="1582.0" y="804.2499999999998" />
+              <point x="-70.0" y="-7.2916666666667425" />
+            </edge>
+            <edge source="com.google.zxing:javase:jar:3.3.0" target="com.google.zxing:core:jar:3.3.0">
+              <point x="47.5" y="-11.666666666666686" />
+              <point x="423.0" y="332.57715955284425" />
+              <point x="503.0" y="194.62499999999977" />
+              <point x="-38.5" y="8.75" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE">
+              <point x="65.5" y="13.125" />
+              <point x="688.0" y="1828.1777910859469" />
+              <point x="768.0" y="1916.6936774099877" />
+              <point x="-83.5" y="-11.666666666666742" />
+            </edge>
+            <edge source="com.google.zxing:javase:jar:3.3.0" target="com.google.zxing:javase:jar:3.3.0/com.github.jai-imageio:jai-imageio-core:jar:1.3.1">
+              <point x="47.5" y="-0.0" />
+              <point x="423.0" y="344.243826219511" />
+              <point x="-92.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.bouncycastle:bcprov-jdk15on:jar:1.57">
+              <point x="52.0" y="-11.097560975609781" />
+              <point x="184.0" y="419.243826219511" />
+              <point x="-83.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE" target="org.springframework:spring-tx:jar:4.3.9.RELEASE">
+              <point x="70.0" y="11.666666666666742" />
+              <point x="688.0" y="793.4166666666665" />
+              <point x="768.0" y="798.083333333333" />
+              <point x="-61.0" y="-11.666666666666742" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="52.0" y="-0.0" />
+              <point x="1353.0" y="1380.0527910859469" />
+              <point x="-74.5" y="-3.888888888888914" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE">
+              <point x="65.5" y="-4.375" />
+              <point x="423.0" y="789.868826219511" />
+              <point x="503.0" y="781.7499999999998" />
+              <point x="-70.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-web:jar:4.3.9.RELEASE">
+              <point x="79.0" y="-14.583333333333258" />
+              <point x="423.0" y="1913.5123511904767" />
+              <point x="503.0" y="1823.8027910859469" />
+              <point x="-65.5" y="8.75" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final">
+              <point x="83.5" y="-0.0" />
+              <point x="-155.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="commons-fileupload:commons-fileupload:jar:1.3.2">
+              <point x="52.0" y="-9.39024390243901" />
+              <point x="184.0" y="569.243826219511" />
+              <point x="-101.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.7.25">
+              <point x="52.0" y="4.268292682926813" />
+              <point x="184.0" y="1572.1777910859469" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.apache.tomcat:tomcat-jdbc:jar:8.5.15">
+              <point x="52.0" y="6.829268292682855" />
+              <point x="184.0" y="1722.3027910859469" />
+              <point x="-70.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-webmvc:jar:4.3.9.RELEASE">
+              <point x="52.0" y="11.097560975609667" />
+              <point x="184.0" y="1928.09568452381" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-mock:jar:2.0.8">
+              <point x="52.0" y="-0.8536585365853853" />
+              <point x="184.0" y="1257.6408863240408" />
+              <point x="-70.0" y="-0.0" />
+            </edge>
+            <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="43.0" y="-0.0" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="org.slf4j:slf4j-log4j12:jar:1.7.25" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="79.0" y="8.75" />
+              <point x="423.0" y="1580.9277910859469" />
+              <point x="503.0" y="1600.9277910859469" />
+              <point x="-61.0" y="-8.75" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE">
+              <point x="83.5" y="-13.125" />
+              <point x="1079.0" y="1915.2353440766544" />
+              <point x="1159.0" y="1907.6520107433212" />
+              <point x="-65.5" y="11.666666666666742" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.google.zxing:javase:jar:3.3.0">
+              <point x="52.0" y="-11.951219512195166" />
+              <point x="184.0" y="344.243826219511" />
+              <point x="-47.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE">
+              <point x="79.0" y="8.75" />
+              <point x="423.0" y="1936.84568452381" />
+              <point x="503.0" y="1980.6825529907073" />
+              <point x="-97.0" y="8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+              <point x="52.0" y="-8.536585365853625" />
+              <point x="184.0" y="644.243826219511" />
+              <point x="-43.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="65.5" y="13.125" />
+              <point x="423.0" y="807.368826219511" />
+              <point x="503.0" y="837.7499999999998" />
+              <point x="1353.0" y="837.7499999999998" />
+              <point x="-74.5" y="-7.777777777777828" />
+            </edge>
+            <edge source="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8" target="com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+              <point x="92.5" y="-0.0" />
+              <point x="423.0" y="1422.0527910859469" />
+              <point x="-74.5" y="8.75" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="65.5" y="-13.125" />
+              <point x="423.0" y="781.118826219511" />
+              <point x="503.0" y="732.993826219511" />
+              <point x="1582.0" y="732.993826219511" />
+              <point x="-70.0" y="-13.125" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+              <point x="83.5" y="-15.555555555555543" />
+              <point x="768.0" y="922.2499999999998" />
+              <point x="-115.0" y="8.75" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="83.5" y="-7.777777777777828" />
+              <point x="768.0" y="1016.4999999999998" />
+              <point x="1079.0" y="1016.4999999999998" />
+              <point x="1159.0" y="1005.8479928861777" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.thrift:libthrift:jar:0.10.0" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1">
+              <point x="61.0" y="8.75" />
+              <point x="423.0" y="101.24999999999977" />
+              <point x="503.0" y="110.87499999999977" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE" target="org.springframework:spring-tx:jar:4.3.9.RELEASE">
+              <point x="65.5" y="4.375" />
+              <point x="423.0" y="798.618826219511" />
+              <point x="503.0" y="809.7499999999998" />
+              <point x="-61.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="65.5" y="8.75" />
+              <point x="1582.0" y="1904.7353440766544" />
+              <point x="-70.0" y="1.4583333333332575" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+              <point x="52.0" y="0.8536585365853853" />
+              <point x="184.0" y="1394.0527910859469" />
+              <point x="423.0" y="1394.0527910859469" />
+              <point x="-74.5" y="-8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.mybatis:mybatis-spring:jar:1.3.1">
+              <point x="52.0" y="2.560975609756156" />
+              <point x="184.0" y="1497.0527910859469" />
+              <point x="-83.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-ehcache:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final">
+              <point x="97.0" y="8.75" />
+              <point x="423.0" y="885.4999999999998" />
+              <point x="-83.5" y="-8.75" />
+            </edge>
+            <edge source="org.springframework:spring-beans:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="74.5" y="-0.0" />
+              <point x="-70.0" y="-4.375" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE">
+              <point x="83.5" y="13.125" />
+              <point x="1079.0" y="1941.4853440766544" />
+              <point x="-97.0" y="-8.75" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="65.5" y="-13.125" />
+              <point x="688.0" y="1801.9277910859469" />
+              <point x="768.0" y="1783.381177409988" />
+              <point x="1353.0" y="1783.381177409988" />
+              <point x="-74.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.32">
+              <point x="52.0" y="-17.073170731707364" />
+              <point x="184.0" y="17.5" />
+              <point x="-56.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-oxm:jar:4.3.9.RELEASE">
+              <point x="52.0" y="14.512195121951208" />
+              <point x="184.0" y="2095.527010743321" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8">
+              <point x="52.0" y="1.7073170731707705" />
+              <point x="184.0" y="1422.0527910859469" />
+              <point x="-92.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.tomcat:tomcat-jdbc:jar:8.5.15" target="org.apache.tomcat:tomcat-jdbc:jar:8.5.15/org.apache.tomcat:tomcat-juli:jar:8.5.15">
+              <point x="70.0" y="-0.0" />
+              <point x="-70.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-core:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2">
+              <point x="70.0" y="-0.0" />
+              <point x="-88.0" y="8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="javax.servlet:servlet-api:jar:2.5">
+              <point x="52.0" y="-14.512195121951208" />
+              <point x="184.0" y="205.12499999999977" />
+              <point x="-70.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="dom4j:dom4j:jar:1.6.1">
+              <point x="83.5" y="15.555555555555657" />
+              <point x="768.0" y="1732.8027910859469" />
+              <point x="-43.0" y="-8.75" />
+            </edge>
+            <edge source="com.google.zxing:javase:jar:3.3.0" target="com.google.zxing:javase:jar:3.3.0/com.beust:jcommander:jar:1.48">
+              <point x="47.5" y="11.666666666666686" />
+              <point x="423.0" y="355.91049288617774" />
+              <point x="503.0" y="422.59568452380995" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:5.2.10.Final">
+              <point x="52.0" y="-1.7073170731707705" />
+              <point x="184.0" y="1135.5158863240408" />
+              <point x="-83.5" y="8.75" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="83.5" y="-4.375" />
+              <point x="1353.0" y="1923.9853440766544" />
+              <point x="-74.5" y="11.666666666666742" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="151.0" y="-0.0" />
+              <point x="1159.0" y="1017.5146595528445" />
+              <point x="-79.0" y="11.666666666666742" />
+            </edge>
+            <edge source="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1" target="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1/commons-codec:commons-codec:jar:1.9">
+              <point x="65.5" y="11.666666666666742" />
+              <point x="688.0" y="122.54166666666652" />
+              <point x="768.0" y="150.34568452380995" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="javax.servlet:jstl:jar:1.2">
+              <point x="52.0" y="-10.243902439024396" />
+              <point x="184.0" y="494.243826219511" />
+              <point x="-38.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-tx:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="61.0" y="8.75" />
+              <point x="1079.0" y="818.4999999999998" />
+              <point x="1159.0" y="815.2499999999998" />
+              <point x="1353.0" y="815.2499999999998" />
+              <point x="-74.5" y="-11.666666666666742" />
+            </edge>
+            <edge source="org.springframework:spring-orm:jar:4.3.9.RELEASE/org.springframework:spring-jdbc:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="70.0" y="-0.0" />
+              <point x="1353.0" y="781.4166666666663" />
+              <point x="-74.5" y="-15.555555555555657" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="commons-io:commons-io:jar:2.5">
+              <point x="52.0" y="8.536585365853625" />
+              <point x="184.0" y="1778.3027910859469" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+              <point x="52.0" y="-4.268292682926813" />
+              <point x="184.0" y="904.7499999999998" />
+              <point x="-115.0" y="-8.75" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-core:jar:4.3.9.RELEASE">
+              <point x="65.5" y="-4.375" />
+              <point x="688.0" y="1810.6777910859469" />
+              <point x="768.0" y="1817.943677409988" />
+              <point x="1582.0" y="1817.943677409988" />
+              <point x="-70.0" y="-1.4583333333332575" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final">
+              <point x="83.5" y="-3.888888888888914" />
+              <point x="-151.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/com.fasterxml:classmate:jar:1.3.0">
+              <point x="83.5" y="11.666666666666742" />
+              <point x="768.0" y="1344.4999999999998" />
+              <point x="-61.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="log4j:log4j:jar:1.2.17">
+              <point x="52.0" y="3.4146341463414274" />
+              <point x="184.0" y="1525.0527910859469" />
+              <point x="-43.0" y="-8.75" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-test:jar:4.3.9.RELEASE">
+              <point x="52.0" y="17.07317073170725" />
+              <point x="184.0" y="2226.527010743321" />
+              <point x="-70.0" y="-0.0" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-tx:jar:4.3.9.RELEASE">
+              <point x="52.0" y="-5.975609756097583" />
+              <point x="184.0" y="848.7499999999998" />
+              <point x="688.0" y="848.7499999999998" />
+              <point x="768.0" y="821.4166666666665" />
+              <point x="-61.0" y="11.666666666666742" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE">
+              <point x="65.5" y="4.375" />
+              <point x="688.0" y="1819.4277910859469" />
+              <point x="768.0" y="1826.693677409988" />
+              <point x="1079.0" y="1826.693677409988" />
+              <point x="1159.0" y="1884.3186774099877" />
+              <point x="-65.5" y="-11.666666666666742" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="org.springframework:spring-context:jar:4.3.9.RELEASE">
+              <point x="52.0" y="12.804878048780438" />
+              <point x="184.0" y="2039.5270107433212" />
+              <point x="688.0" y="2039.5270107433212" />
+              <point x="768.0" y="1940.0270107433212" />
+              <point x="-83.5" y="11.666666666666742" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="org.hibernate:hibernate-core:jar:5.2.10.Final/org.jboss:jandex:jar:2.0.3.Final">
+              <point x="83.5" y="7.777777777777828" />
+              <point x="768.0" y="1269.4999999999998" />
+              <point x="-47.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="65.5" y="-8.75" />
+              <point x="1353.0" y="1887.2353440766544" />
+              <point x="-74.5" y="7.777777777777828" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.9.RELEASE" target="org.springframework:spring-context:jar:4.3.9.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE">
+              <point x="79.0" y="-2.9166666666667425" />
+              <point x="423.0" y="1925.1790178571432" />
+              <point x="503.0" y="1895.9853440766544" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.10.Final" target="antlr:antlr:jar:2.7.7">
+              <point x="83.5" y="-11.666666666666629" />
+              <point x="768.0" y="997.2499999999998" />
+              <point x="-43.0" y="8.75" />
+            </edge>
+            <edge source="org.springframework:spring-oxm:jar:4.3.9.RELEASE" target="org.springframework:spring-beans:jar:4.3.9.RELEASE">
+              <point x="65.5" y="-8.75" />
+              <point x="1353.0" y="2086.777010743321" />
+              <point x="-74.5" y="15.555555555555657" />
+            </edge>
+            <edge source="com.jump:account:1.0-SNAPSHOT" target="net.sf.ehcache:ehcache:jar:2.10.4">
+              <point x="52.0" y="-13.658536585365823" />
+              <point x="184.0" y="280.1249999999998" />
+              <point x="-52.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1" target="org.springframework:spring-core:jar:4.3.9.RELEASE/commons-logging:commons-logging:jar:1.2">
+              <point x="65.5" y="-0.0" />
+              <point x="1802.0" y="110.87499999999977" />
+              <point x="-88.0" y="-8.75" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8889624724061811" x="396.97765085671716" y="1073.9776508567172" />
+          <SelectedNodes>
+            <node>org.apache.thrift:libthrift:jar:0.10.0/org.apache.httpcomponents:httpclient:jar:4.4.1</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        <state relative-caret-position="411">
+          <caret line="103" column="39" lean-forward="false" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/dao/impl/BaseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="748">
+          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding>
+            <element signature="n#prop#5;n#props#0;n#property#2;n#bean#1;n#beans#0;n#!!top" expanded="true" />
+            <element signature="n#prop#6;n#props#0;n#property#2;n#bean#1;n#beans#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/dao/AccountDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/thrift/impl/TAccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1568">
+          <caret line="90" column="32" lean-forward="false" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jump/account/base/entity/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

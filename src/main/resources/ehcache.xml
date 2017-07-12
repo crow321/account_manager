@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache>
+    <diskStore path="D:/logs/account/cache"/>
+    <defaultCache
+            maxElementsInMemory="5"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            overflowToDisk="true"
+            diskPersistent="true"
+            diskExpiryThreadIntervalSeconds="60"/>
+    <!-- 为com.jump.account.base.entity.Account 类单独设置缓存 -->
+    <cache name="com.jump.account.base.entity.Account"
+           maxElementsInMemory="10"
+           eternal="false"
+           overflowToDisk="true"
+           timeToIdleSeconds="100"
+           timeToLiveSeconds="100"
+           diskPersistent="false"/>
+</ehcache>
+
+        <!--
+        ### EHCache 缓存属性 ###
+        maxElementsInMemory ：属性用于指定缓存中最多可放多少个对象。
+        eternal             ：属性指定缓存是否永久有效。
+        timeToIdleSeconds   ：属性指定缓存多久未被使用便清理掉。
+        timeToLiveSeconds   ：属性指定缓存的生命长度。
+        diskPersistent      ：属性指定缓存是否被持久化到硬盘中，保存路径由<diskStore>标签指定。
+        -->
